@@ -17,15 +17,15 @@ eval "$("$BASE16_SHELL/profile_helper.sh")"
 # setopt.zsh {{{
 
 # History
-setopt SHARE_HISTORY
+setopt share_history
 setopt hist_save_no_dups
-setopt HIST_NO_STORE
-setopt EXTENDED_HISTORY # Record start and end
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_REDUCE_BLANKS
-setopt HIST_FIND_NO_DUPS
+setopt hist_no_store
+setopt extended_history # Record start and end
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt hist_find_no_dups
 setopt ignore_eof
 setopt no_beep
 setopt interactive_comments

@@ -14,8 +14,9 @@ brew install docker
 brew install tree
 brew install mas
 brew install openssl
-brew install nkf
+# brew install nkf
 brew install iproute2mac
+brew install clisp
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng

@@ -80,7 +80,7 @@ set wrapscan
 " switch syntax highlighting on
 syntax on
 
-set encoding=utf8
+set encoding=utf-8
 set fileencoding=utf-8
 " let base16colorspace=256  " Access colors present in 256 colorspace"
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"

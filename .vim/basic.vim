@@ -1,4 +1,4 @@
-set encoding=utf8
+set encoding=utf-8
 set fileencoding=utf-8
 
 set number " Show line numbers
@@ -20,11 +20,6 @@ set whichwrap=b,s,h,l,<,>,[,],~
 " Do not use visualbell
 set novisualbell
 set vb t_vb=
-
-" Enable the use of mouse in all modes
-if has("mouse")
-    set mouse=a
-endif
 
 " Tab control
 set expandtab " Tabs ftw
