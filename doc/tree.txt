@@ -1,0 +1,56 @@
+dotfiles
+├── .bash_profile
+├── .bashrc
+├── .editorconfig
+├── .tmux
+│   ├── base16.sh
+│   ├── bin
+│   │   ├── battery
+│   │   └── wifi
+│   ├── theme.sh
+│   └── tmux.conf.symlink
+├── .tmux.conf
+├── .travis.yml
+├── .vim
+│   └── vimrc
+│       ├── base.vim
+│       ├── cmd.vim
+│       ├── env.vim
+│       ├── init.vim
+│       ├── mapping.vim
+│       ├── option.vim
+│       ├── plug.vim
+│       └── view.vim
+├── .vimrc
+├── .zsh
+│   ├── Makefile
+│   ├── aliases.zsh
+│   ├── colors.zsh
+│   ├── config.zsh
+│   ├── custom.zsh
+│   ├── keybinds.zsh
+│   ├── prompt.zsh
+│   └── setopt.zsh
+├── .zshenv
+├── .zshrc
+├── Makefile
+├── README.md
+├── bin
+│   ├── gbackup
+│   └── man2pdf
+├── doc
+│   ├── dotfiles.png
+│   └── tree.txt
+└── etc
+    ├── init
+    │   ├── brew.sh
+    │   ├── com.googlecode.iterm2.plist
+    │   ├── deb.sh
+    │   ├── formula.sh
+    │   ├── init.sh
+    │   └── rhel.sh
+    └── scripts
+        ├── os.sh
+        └── proxy.sh
+
+10 directories, 43 files

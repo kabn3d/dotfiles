@@ -1,0 +1,8 @@
+#!/bin/bash
+
+find . -name '\''*.DS_Store'\'' -type f -ls -delete'
+
+ls | xargs -n1 -I{} tar jcvf {}.tar.bz2 {}
+
+mv -f *.bz2 ${HOME}/GoogleDrive/mine
+
