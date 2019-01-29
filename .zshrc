@@ -3,7 +3,7 @@ limit coredumpsize 0
 bindkey -e
 
 PROMPT_SYMBOL='❯'
-local p_cdir="%B%~%b"$'\n'
+local p_cdir="%F{blue}%B%~%b%f"$'\n'
 # local p_info="%n@%m"
 PROMPT="$p_cdir$PROMPT_SYMBOL "
 
@@ -39,18 +39,18 @@ function chpwd() {ls -lFh -G}
 # setopt pushd_ignore_dups
 
 # }}}
-#
-#
+
+
 # aliases.zsh {{{
 
 # Reload zsh config
 alias reload!='source ~/.zshrc'
 # Reload the shell (i.e. invoke as login shell)
 alias relogin!='exec $SHELL -l'
-
 # Clear all history
 alias clrhs!='rm -f ~/.zsh_history && exec -l $SHELL'
 
+alias path='echo -e ${PATH//:/\\n}'
 # 'clean' + 'cd'
 alias clr='cd && clear'
 
