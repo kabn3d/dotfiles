@@ -86,7 +86,7 @@ set fileencoding=utf-8
 " let base16colorspace=256  " Access colors present in 256 colorspace"
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 
-" view.vim
+" view.vim {{{
 set number " show line numbers
 set wrap " turn on line wrapping
 set wrapmargin=8 " wrap lines when coming within n characters from side
@@ -107,6 +107,8 @@ set cmdheight=1 " command bar height
 set title " set terminal title
 set showmatch " show matching braces
 set mat=2 " how many tenths of a second to blink
+
+" }}}
 
 " highlight conflicts
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
