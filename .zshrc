@@ -4,8 +4,8 @@ bindkey -e
 
 PROMPT_SYMBOL='❯'
 local p_cdir="%B%~%b"$'\n'
-local p_info="%n@%m"
-PROMPT=" $p_cdir$p_info$ "
+# local p_info="%n@%m"
+PROMPT="$p_cdir$PROMPT_SYMBOL "
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -146,5 +146,6 @@ alias light="base16_solarized-light"
 # OS info
 alias OS="cat /etc/os-release"
 alias RHEL="cat /etc/redhat-release"
+
 # }}}
 

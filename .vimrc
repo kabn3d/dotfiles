@@ -16,6 +16,7 @@ Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'shougo/neocomplete.vim'
+Plugin 'yggdroot/indentline' "indent line
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -46,7 +47,7 @@ set shiftround " round indent to a multiple of 'shiftwidth'
 
 " Use clipboard
 if has('clipboard')
-    set clipboard=unnamed
+    set clipboard=unnamed,autoselect
 endif
 
 " faster redrawing
@@ -78,7 +79,7 @@ set mat=2 " how many tenths of a second to blink
 set wrapscan
 
 " switch syntax highlighting on
-syntax on
+syntax enable on
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -299,6 +300,12 @@ if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
     source ~/.vimrc_background
 endif
+
+
+" Indent Line
+let g:indentLine_char = '|'
+let g:indentLine_faster = 1
+nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 " neocomplete.vim
 "Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!

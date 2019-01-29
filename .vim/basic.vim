@@ -15,7 +15,15 @@ set ffs=unix,dos,mac
 
 " Make backspace behave in a sane manner
 set backspace=indent,eol,start
+
+" Enable moving from ent the line to head of line
 set whichwrap=b,s,h,l,<,>,[,],~
+
+" Switch syntax highlighting on
+syntax enable on
+
+" Highright cursol line
+set cursorline
 
 " Do not use visualbell
 set novisualbell
@@ -33,7 +41,7 @@ set shiftround " Round indent to a multiple of 'shiftwidth'
 set pastetoggle=<F2>
 
 " Use clipboard
-if has('clipboard')¬"
-    set clipboard=unnamed
+if has('clipboard')"
+    set clipboard=unnamed,autoselect
 endif
 

@@ -308,9 +308,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>461 466 928 394 0 0 1440 877 </string>
+	<string>461 408 918 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 409 724 468 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 70 724 468 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1615,7 +1615,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/epgtne</string>
 		</dict>
@@ -1682,7 +1682,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/epgtne/mine/dotfiles/etc/setup</string>
+	<string>/Users/epgtne/mine/dotfiles/etc/init</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUAutomaticallyUpdate</key>
