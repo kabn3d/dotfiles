@@ -196,7 +196,7 @@ inoremap , ,<Space>
 " Delete hilight to ESC twice
 nnoremap <silent> <esc><esc> :noh<return>
 
-" ";;" instead of <ESC>
+" ";;" instead of <ESC> and save current file
 inoremap <silent> ;; <ESC>
 inoremap <silent> ;;  <ESC>:w<CR>
 
