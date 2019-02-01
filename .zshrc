@@ -17,23 +17,25 @@ eval "$("$BASE16_SHELL/profile_helper.sh")"
 # setopt.zsh {{{
 
 # History
-setopt share_history
-setopt hist_save_no_dups
-setopt hist_no_store
-setopt extended_history # Record start and end
-setopt hist_ignore_dups
-setopt hist_ignore_all_dups
-setopt hist_ignore_space
-setopt hist_reduce_blanks
-setopt hist_find_no_dups
-setopt ignore_eof
-setopt no_beep
-setopt interactive_comments
-setopt correct
-setopt print_eight_bit
-setopt no_flow_control
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY # Record start and end
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_NO_STORE
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANkS
+setopt HIST_FIND_NO_DUPS
 
-setopt auto_cd
+setopt IGNORE_EOF
+setopt NO_BEEP
+setopt INTERACTIVE_COMMENTS
+setopt CORRECT
+setopt PRINT_EIGHT_BIT
+setopt NO_FLOW_CONTROL
+setopt COMPLETE_ALIASES
+
+setopt AUTO_CD
 function chpwd() {ls -lFh -G}
 # setopt auto_pushd
 # setopt pushd_ignore_dups

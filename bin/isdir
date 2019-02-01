@@ -6,11 +6,5 @@ set -ue -o pipefail
 # Prevent commands misbehaving due to locale differences
 export LC_ALL=C
 
-for f in *
-do
-    [[ "$f" == ".git " ]] && continue
-    [[ "$f" == ".DS_Store" ]] && continue
-
-    tar --exclude .git -jcvf $f.tar.bz2 $f
-done
+test -d "$1" && echo "$1 is a directory." || echo "$1 is not a directory."
 

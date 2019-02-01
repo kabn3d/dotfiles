@@ -1,4 +1,3 @@
-
 " load plugins from vundle
 filetype off
 
@@ -83,7 +82,7 @@ syntax enable on
 
 set encoding=utf-8
 set fileencoding=utf-8
-" let base16colorspace=256  " Access colors present in 256 colorspace"
+" let base16colorspace=256  " Access colors present in 256 colorspace
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 
 " view.vim {{{
@@ -107,7 +106,7 @@ set cmdheight=1 " command bar height
 set title " set terminal title
 set showmatch " show matching braces
 set mat=2 " how many tenths of a second to blink
-
+set display=uhex
 " }}}
 
 " highlight conflicts
@@ -118,6 +117,15 @@ set autoindent " automatically set indent of new line
 set smartindent
 
 set laststatus=2 " show the satus line all the time
+set statusline=%F%m%h%w\ %<[ENC=%{&fenc!=''?&fenc:&enc}]\ [FMT=%{&ff}]\ [TYPE=%Y]\ %=[CODE=0x%02B]\ [POS=%l/%L(%02v)]
+
+" Show line and column number
+set ruler
+
+" 80-column indication
+set textwidth=79
+set colorcolumn=+1
+highlight ColorColumn guibg=#202020 ctermbg=lightgray
 
 " Do not use visualbell
 set novisualbell
@@ -130,9 +138,6 @@ set wrap
 " Do not use alt key on Win
 set winaltkeys=no
 
-" Show line and column number
-set ruler
-set rulerformat=%m%r%=%l/%L
 
 " Set command window height to reduce number of 'Press ENTER...' prompts
 set cmdheight=2
@@ -156,6 +161,7 @@ endif
 " toggle invisible characters
 set list
 set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+" set listchars=tab:→\ ,eol:¬,space:⋅,extends:❯,precedes:❮
 set showbreak=↪
 
 
@@ -191,15 +197,16 @@ inoremap [ []<Left>
 inoremap , ,<Space>
 
 " Don't use registor when pressed 'x'
-" nnoremap x "_x
+nnoremap x "_x
 
 " Delete hilight to ESC twice
 nnoremap <silent> <esc><esc> :noh<return>
 
-" ";;" instead of <ESC> and save current file
+" ';;' instead of <ESC> and save current file
 inoremap <silent> ;; <ESC>
 inoremap <silent> ;;  <ESC>:w<CR>
 
+" bindkey like emacs
 inoremap <C-h> <Backspace>
 inoremap <C-d> <Delete>
 cnoremap <C-k> <UP>
@@ -242,6 +249,14 @@ nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
+
+" Shortcut keys
+
+" ex) insert (2019-02-02)
+imap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
+
+" Highlight the word under the cursor
+nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 
 " }}}
 "
