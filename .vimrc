@@ -66,7 +66,7 @@ set foldlevel=1
 set ignorecase " case insensitive searching
 set smartcase " case-sensitive if expresson contains a capital letter
 set hlsearch
-set incsearch " set incremental search, like modern browsers
+set incsearch " set incremental search
 set nolazyredraw " don't redraw while executing macros
 
 set magic " Set magic on, for regex
@@ -206,7 +206,7 @@ nnoremap <silent> <esc><esc> :noh<return>
 inoremap <silent> ;; <ESC>
 inoremap <silent> ;;  <ESC>:w<CR>
 
-" bindkey like emacs
+" like emacs
 inoremap <C-h> <Backspace>
 inoremap <C-d> <Delete>
 cnoremap <C-k> <UP>
@@ -252,7 +252,7 @@ nnoremap ZQ <Nop>
 
 " Shortcut keys
 
-" ex) insert (2019-02-02)
+" insert date ex) 2019-02-02
 imap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
 " Highlight the word under the cursor

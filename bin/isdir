@@ -6,5 +6,5 @@ set -ue -o pipefail
 # Prevent commands misbehaving due to locale differences
 export LC_ALL=C
 
-test -d "$1" && echo "$1 is a directory." || echo "$1 is not a directory."
+test -d "$1"
 

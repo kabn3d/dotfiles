@@ -12,8 +12,7 @@ brew cask install visual-studio-code
 brew cask install vagrant
 brew install docker
 brew install tree
-brew install mas
-brew install openssl
+# brew install mas
 # brew install nkf
 brew install iproute2mac
 brew install clisp
@@ -42,7 +41,6 @@ brew install clisp
 # brew install tcptrace
 # brew install ucspi-tcp # `tcpserver` etc.
 # brew install xpdf
-brew install xz
 
 # Remove outdated versions from the cellar.
 brew cleanup

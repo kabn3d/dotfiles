@@ -37,8 +37,8 @@ setopt COMPLETE_ALIASES
 
 setopt AUTO_CD
 function chpwd() {ls -lFh -G}
-# setopt auto_pushd
-# setopt pushd_ignore_dups
+# setopt AUTO_PUSHD
+# setopt PUSHD_IGNORE_DUPS
 
 # }}}
 
@@ -76,7 +76,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias ls="command ls ${colorflag}" # Always use color output for 'ls'
-alias l="ls -lahF ${colorflag}"    # Show hidden all files
+alias l="ls -lAhF ${colorflag}"    # Show hidden all files
 alias la="ls -AF ${colorflag}"     # Show hidden files
 alias ll="ls -lFh ${colorflag}"    # Show all files in long format
 alias lr="ls -lR ${colorflag}"     # Recursive ls
@@ -91,6 +91,10 @@ alias fgrep='fgrep --color=auto'
 
 alias df='df -h' # disk free, in Gigabytes, not bytes
 alias du='du -h -c' # calculate disk usage for a folder
+
+# tree
+# alias tree = 'tree -a -I "\.DS_Store|\.git|node_modules|vendor\/bundle" -N'
+
 
 # History
 alias history='history 1' # Show all history

@@ -6,5 +6,5 @@ set -ue -o pipefail
 # Prevent commands misbehaving due to locale differences
 export LC_ALL=C
 
-test -f "$1" && echo "$1 is a file." || echo "$1 is not a file."
+test -f "$1"
 
