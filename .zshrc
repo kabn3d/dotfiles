@@ -50,11 +50,11 @@ alias reload!='source ~/.zshrc'
 # Reload the shell (i.e. invoke as login shell)
 alias relogin!='exec $SHELL -l'
 # Clear all history
-alias clrhs!='rm -f ~/.zsh_history && exec -l $SHELL'
+# alias clrhs!='rm -f ~/.zsh_history && exec -l $SHELL'
 
 alias path='echo -e ${PATH//:/\\n}'
 # 'clean' + 'cd'
-alias clr='command cd && clear'
+alias clr='cd && clear'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
