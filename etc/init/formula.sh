@@ -8,8 +8,8 @@ brew install vim --with-lua
 brew cask install iterm2
 brew cask install google-chrome
 brew cask install virtualbox
-brew cask install visual-studio-code
 brew cask install vagrant
+brew cask install visual-studio-code
 brew install docker
 brew install tree
 # brew install mas
