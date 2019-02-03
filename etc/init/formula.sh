@@ -12,7 +12,6 @@ brew cask install vagrant
 brew cask install visual-studio-code
 brew install docker
 brew install tree
-# brew install mas
 # brew install nkf
 brew install iproute2mac
 brew install clisp
