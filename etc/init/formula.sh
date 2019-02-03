@@ -7,12 +7,13 @@ brew install vim --with-lua
 # Install Apps & Commands
 brew cask install iterm2
 brew cask install google-chrome
+brew cask install google-backup-and-sync
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install visual-studio-code
 brew install docker
 brew install tree
-# brew install nkf
+brew install nkf
 brew install iproute2mac
 brew install clisp
 
