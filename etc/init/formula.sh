@@ -12,10 +12,11 @@ brew cask install virtualbox
 brew cask install vagrant
 brew cask install visual-studio-code
 brew install docker
-brew install tree
-brew install nkf
-brew install iproute2mac
 brew install clisp
+
+brew install tree
+# brew install nkf
+# brew install iproute2mac
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
