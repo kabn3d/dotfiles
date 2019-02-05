@@ -14,8 +14,8 @@ Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plugin 'editorconfig/editorconfig-vim' " editor config
-Plugin 'shougo/neocomplete.vim'
 Plugin 'yggdroot/indentline' "indent line
+Plugin 'shougo/neocomplete.vim'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'

@@ -36,7 +36,7 @@ setopt NO_FLOW_CONTROL
 setopt COMPLETE_ALIASES
 
 setopt AUTO_CD
-function chpwd() {ls -lFh -G}
+function chpwd() {ls -lFh ${colorflag}}
 # setopt AUTO_PUSHD
 # setopt PUSHD_IGNORE_DUPS
 
@@ -89,9 +89,6 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-alias df='df -h' # disk free, in Gigabytes, not bytes
-alias du='du -h -c' # calculate disk usage for a folder
-
 # tree
 # alias tree = 'tree -a -I "\.DS_Store|\.git|node_modules|vendor\/bundle" -N'
 
@@ -122,6 +119,7 @@ alias -g VI='| xargs -o vim'
 
 # Shortcuts my dotfile
 alias -g zrc='~/.zshrc'
+alias -g zhs='~/.zsh_history'
 alias -g vrc='~/.vimrc'
 alias -g tcnf='~/.tmux.conf'
 
@@ -140,7 +138,6 @@ alias g="git"
 
 # Shortcuts
 alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
 alias pj="cd ~/projects"
 alias dtf="cd ~/mine/dotfiles"
 alias wrk="cd ~/workspace"
