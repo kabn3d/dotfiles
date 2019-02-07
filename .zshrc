@@ -91,8 +91,8 @@ alias fgrep='fgrep --color=auto'
 # alias tree = 'tree -a -I "\.DS_Store|\.git|node_modules|vendor\/bundle" -N'
 
 # History
-alias history='history 1' # Show all history
-alias hs='history | grep'
+alias hs='history'
+alias hsg='history | grep'
 
 # Vim
 alias vi='vim'
