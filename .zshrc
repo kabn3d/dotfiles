@@ -75,7 +75,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias ls="command ls ${colorflag}" # Always use color output for 'ls'
+alias ls="ls ${colorflag}" # Always use color output for 'ls'
 alias l="ls -lAhF ${colorflag}"    # Show hidden all files
 alias la="ls -AF ${colorflag}"     # Show hidden files
 alias ll="ls -lFh ${colorflag}"    # Show all files in long format
