@@ -82,8 +82,6 @@ alias ll="ls -lFh ${colorflag}"    # Show all files in long format
 alias lr="ls -lR ${colorflag}"     # Recursive ls
 alias lld="ls -l | grep ^d"        # Show only directories
 
-alias rmf="rm -rf"
-
 # Helpers
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -91,7 +89,6 @@ alias fgrep='fgrep --color=auto'
 
 # tree
 # alias tree = 'tree -a -I "\.DS_Store|\.git|node_modules|vendor\/bundle" -N'
-
 
 # History
 alias history='history 1' # Show all history
