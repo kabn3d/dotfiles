@@ -132,6 +132,7 @@ alias cpwd='echo -n $PWD | pbcopy' # pwd copy for Linux
 
 # git
 alias g="git"
+alias gs="git status"
 
 # Shortcuts
 alias dl="cd ~/Downloads"
