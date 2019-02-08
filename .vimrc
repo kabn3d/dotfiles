@@ -258,9 +258,7 @@ nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearc
 
 " }}}
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugin settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" plugin.vim {{{
 
 " close NERDTree after a file is opened
 let g:NERDTreeQuitOnOpen=0
@@ -298,4 +296,5 @@ endif
 let g:indentLine_char = '|'
 let g:indentLine_faster = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
+}}}
 
