@@ -1,5 +1,6 @@
 umask 022
 limit coredumpsize 0
+# bindkey -d
 bindkey -e
 
 PROMPT_SYMBOL='❯'
@@ -41,7 +42,6 @@ function chpwd() {ls -lFh ${colorflag}}
 # setopt PUSHD_IGNORE_DUPS
 
 # }}}
-
 
 # aliases.zsh {{{
 
