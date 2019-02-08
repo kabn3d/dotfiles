@@ -250,7 +250,6 @@ nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
 
 " Shortcut keys
-
 " insert date ex) 2019-02-02
 imap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
@@ -258,29 +257,6 @@ imap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 
 " }}}
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Functions
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <C-h> :call WinMove('h')<cr>
-map <C-j> :call WinMove('j')<cr>
-map <C-k> :call WinMove('k')<cr>
-map <C-l> :call WinMove('l')<cr>
-
-" Window movement shortcuts
-" move to the window in the direction shown, or create a new window
-function! WinMove(key)
-    let t:curwin = winnr()
-    exec "wincmd ".a:key
-    if (t:curwin == winnr())
-        if (match(a:key,'[jk]'))
-            wincmd v
-        else
-            wincmd s
-        endif
-        exec "wincmd ".a:key
-    endif
-endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin settings
