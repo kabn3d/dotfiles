@@ -144,6 +144,9 @@ alias wrk="cd ~/workspace"
 alias dark="base16_solarized-dark"
 alias light="base16_solarized-light"
 
+# for OSX
+alias ql="qlmanage -p *"
+
 # OS info
 alias OS="cat /etc/os-release"
 alias RHEL="cat /etc/redhat-release"
