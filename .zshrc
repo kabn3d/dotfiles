@@ -54,7 +54,7 @@ alias relogin!='exec $SHELL -l'
 
 alias path='echo -e ${PATH//:/\\n}'
 # 'clean' + 'cd'
-alias clr='cd && clear'
+alias clr='cd ~ && clear'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
