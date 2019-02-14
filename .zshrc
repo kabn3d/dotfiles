@@ -92,7 +92,7 @@ alias fgrep='fgrep --color=auto'
 
 # History
 alias hs='history'
-alias hsg='history | grep'
+alias hsg='history -E 1| grep'
 
 # Vim
 alias vi='vim'
