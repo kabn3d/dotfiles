@@ -3,7 +3,7 @@
 # Install Apps & Commands
 brew install git
 brew install tmux
-brew install vim --with-override-system-vi
+brew install vim
 
 brew cask install iterm2
 brew cask install google-chrome
