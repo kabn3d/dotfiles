@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "==> Start install formulae."
+echo ""
+
 # Install Apps & Commands
 brew install git
 brew install tmux
