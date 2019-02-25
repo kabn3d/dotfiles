@@ -11,6 +11,8 @@ brew cask install google-chrome
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install visual-studio-code
+
+brew install python3
 brew install clisp
 
 brew install tree
