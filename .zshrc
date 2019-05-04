@@ -36,6 +36,9 @@ setopt PRINT_EIGHT_BIT
 setopt NO_FLOW_CONTROL
 setopt COMPLETE_ALIASES
 
+# setopt AUTO_LIST
+# setopt AUTO_MENU
+
 setopt AUTO_CD
 function chpwd() {ls -lFh ${colorflag}}
 # setopt AUTO_PUSHD
@@ -103,16 +106,8 @@ alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
 # Global aliases
 alias -g G='| grep'
-alias -g GG='| multi_grep'
 alias -g W='| wc'
 alias -g X='| xargs'
-alias -g F='| "$(available $INTERACTIVE_FILTER)"'
-alias -g S="| sort"
-alias -g V="| tovim"
-alias -g N=" >/dev/null 2>&1"
-alias -g N1=" >/dev/null"
-alias -g N2=" 2>/dev/null"
-alias -g VI='| xargs -o vim'
 
 # Shortcuts my dotfile
 alias -g zrc='~/.zshrc'
@@ -132,12 +127,6 @@ alias cpwd='echo -n $PWD | pbcopy' # pwd copy for Linux
 
 # git
 alias g="git"
-
-# Shortcuts
-alias dl="cd ~/Downloads"
-alias pj="cd ~/projects"
-alias dtf="cd ~/mine/dotfiles"
-alias wrk="cd ~/workspace"
 
 # Color Themas
 alias dark="base16_solarized-dark"
