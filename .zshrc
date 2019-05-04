@@ -1,6 +1,8 @@
 umask 022
 limit coredumpsize 0
-# bindkey -d
+
+# keybind
+bindkey -d
 bindkey -e
 
 PROMPT_SYMBOL='❯'
