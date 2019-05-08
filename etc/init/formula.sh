@@ -8,6 +8,7 @@ brew install tmux
 # brew install vim
 brew cask install iterm2
 brew cask install google-chrome
+# drive
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install visual-studio-code
