@@ -106,11 +106,6 @@ alias vir='vim -R' # Read only
 alias vr='vim -R' # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
-# Global aliases
-alias -g G='| grep'
-alias -g W='| wc'
-alias -g X='| xargs'
-
 # Shortcuts my dotfile
 alias -g zrc='~/.zshrc'
 alias -g zhs='~/.zsh_history'
