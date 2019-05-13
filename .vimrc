@@ -192,9 +192,6 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap " ""<Left>
 inoremap [ []<Left>
 
-" Insert a space after comma
-inoremap , ,<Space>
-
 " Don't use registor when pressed 'x'
 nnoremap x "_x
 

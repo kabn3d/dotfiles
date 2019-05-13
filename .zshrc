@@ -106,12 +106,6 @@ alias vir='vim -R' # Read only
 alias vr='vim -R' # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
-# Shortcuts my dotfile
-alias -g zrc='~/.zshrc'
-alias -g zhs='~/.zsh_history'
-alias -g vrc='~/.vimrc'
-alias -g tcnf='~/.tmux.conf'
-
 # IP addresses
 # alias ip="dig +short myip.opendns.com @resolver1.opendns.com" # to be fix
 # alias localip="ipconfig getifaddr en1" # to be fix
