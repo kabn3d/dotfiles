@@ -137,7 +137,6 @@ set wrap
 " Do not use alt key on Win
 set winaltkeys=no
 
-
 " Set command window height to reduce number of 'Press ENTER...' prompts
 set cmdheight=2
 
