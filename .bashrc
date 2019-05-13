@@ -34,12 +34,6 @@ bash_alias() {
     alias ....="cd ../../.."
     alias .....="cd ../../../.."
 
-    # Shortcuts
-    alias dl="cd ~/Downloads"
-    alias dt="cd ~/Desktop"
-    alias pj="cd ~/projects"
-    alias dtf="cd ~/mine/dotfiles"
-    alias wrk="cd ~/workspace"
     alias g="git"
 
     # Detect which `ls` flavor is in use
@@ -53,13 +47,10 @@ bash_alias() {
 
     # List all files colorized in long format
     alias l="ls -lF ${colorflag}"
-
     # List all files colorized in long format, excluding . and ..
     alias la="ls -lAF ${colorflag}"
-
     # List only directories
     alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-
     # Always use color output for `ls`
     alias ls="command ls ${colorflag}"
 
@@ -75,16 +66,8 @@ bash_alias() {
     # Reload the shell (i.e. invoke as a login shell)
     alias reload="exec ${SHELL} -l"
 
-    # etc
-    alias cp="cp -i"
-    alias mv="mv -i"
-
-    alias du='du -h'
-    alias job='jobs -l'
-
+    # vim
     alias vi="vim"
-
-    # Use plain vim.
     alias nvim='vim -N -u NONE -i NONE'
 
 }
