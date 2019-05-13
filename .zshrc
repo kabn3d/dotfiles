@@ -99,7 +99,7 @@ alias fgrep='fgrep --color=auto'
 alias hs='history'
 alias hsg='history -E 1| grep'
 
-# Vim
+# vim
 alias vi='vim'
 alias v='vim'
 alias vir='vim -R' # Read only
