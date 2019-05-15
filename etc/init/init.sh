@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/bin
-mkdir -p ~/mine
-mkdir -p ~/vm_ssh
-mkdir -p ~/projects
-mkdir -p ~/workspace
-mkdir -p ~/Desktop/tmp_d
-
 # git clone
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell

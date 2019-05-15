@@ -16,10 +16,6 @@ brew cask install visual-studio-code
 brew install python3
 brew install clisp
 
-brew install tree
-brew install nkf
-brew install iproute2mac
-
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
 # brew install bfg
