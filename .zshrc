@@ -96,7 +96,6 @@ alias fgrep='fgrep --color=auto'
 # alias tree = 'tree -a -I "\.DS_Store|\.git|node_modules|vendor\/bundle" -N'
 
 # History
-alias hs='history'
 alias hsg='history -E 1| grep'
 
 # vim
@@ -132,3 +131,32 @@ alias RHEL="cat /etc/redhat-release"
 
 # }}}
 
+# Ignore history
+zshaddhistory() {
+    local line=${1%%$'\n'}
+    local cmd=${line%% *}
+
+    # Only those that satisfy all of the following conditions are added to the history
+    [[ ${#line} -ge 5
+       && ${cmd} != ll
+       && ${cmd} != l
+       && ${cmd} != ls
+       && ${cmd} != la
+       && ${cmd} != cd
+       && ${cmd} != man
+       && ${cmd} != scp
+       && ${cmd} != less
+       && ${cmd} != ping
+       && ${cmd} != open
+       && ${cmd} != file
+       && ${cmd} != which
+       && ${cmd} != whois
+       && ${cmd} != drill
+       && ${cmd} != uname
+       && ${cmd} != md5sum
+       && ${cmd} != pacman
+	   && ${cmd} != xdg-open
+       && ${cmd} != traceroute
+       && ${cmd} != speedtest-cli
+    ]]
+}

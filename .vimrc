@@ -198,8 +198,8 @@ nnoremap x "_x
 nnoremap <silent> <esc><esc> :noh<return>
 
 " ';;' instead of <ESC> and save current file
-inoremap <silent> ;; <ESC>
-inoremap <silent> ;;  <ESC>:w<CR>
+inoremap <silent> kk <ESC>
+inoremap <silent> kk  <ESC>:w<CR>
 
 " like emacs
 inoremap <C-h> <Backspace>
@@ -294,3 +294,4 @@ let g:indentLine_faster = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 " }}}
 
+autocmd FileType c setlocal commentstring=//\ %s
