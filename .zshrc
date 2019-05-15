@@ -160,3 +160,4 @@ zshaddhistory() {
        && ${cmd} != speedtest-cli
     ]]
 }
+

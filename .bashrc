@@ -64,7 +64,7 @@ alias egrep='egrep --color=auto'
 alias sudo='sudo '
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload="exec ${SHELL} -l"
+alias reload!="exec ${SHELL} -l"
 
 # vim
 alias v="vim"
