@@ -4,8 +4,8 @@ echo "==> Start install formulae."
 echo ""
 
 # Install Apps & Commands
-brew install tmux
 # brew install vim
+brew install tmux
 brew cask install iterm2
 brew cask install google-chrome
 # drive
