@@ -27,15 +27,6 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
-
-# Easier navigation:
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-
-alias g="git"
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
     colorflag="--color"
@@ -45,29 +36,76 @@ else # macOS `ls`
     export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 fi
 
-# List all files colorized in long format
-alias l="ls -lF ${colorflag}"
-# List all files colorized in long format, excluding . and ..
-alias la="ls -lAF ${colorflag}"
-# List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-# Always use color output for `ls`
-alias ls="command ls ${colorflag}"
 
-# Always enable colored `grep` output
-# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+# aliases{{{
+
+# Reload zsh config
+alias reload!='source ~/.zshrc'
+# Reload the shell (i.e. invoke as login shell)
+alias relogin!='exec $SHELL -l'
+# Clear all history
+# alias clrhs!='rm -f ~/.zsh_history && exec -l $SHELL'
+
+alias path='echo -e ${PATH//:/\\n}'
+# 'clean' + 'cd'
+alias clr='cd ~ && clear'
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
+
+# Remove broken symlinks
+alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
+
+# Detect which 'ls' flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU 'ls'
+    colorflag='--color'
+else # macOS 'ls'
+    colorflag='-G'
+fi
+
+# alias{{{
+# Filesystem aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias ls="ls ${colorflag}" # Always use color output for 'ls'
+alias l="ls -lAhF ${colorflag}"    # Show hidden all files
+alias la="ls -AF ${colorflag}"     # Show hidden files
+alias ll="ls -lFh ${colorflag}"    # Show all files in long format
+alias lr="ls -lR ${colorflag}"     # Recursive ls
+alias lld="ls -l | grep ^d"        # Show only directories
+
+# Helpers
 alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
+# tree
+# alias tree = 'tree -a -I "\.DS_Store|\.git|node_modules|vendor\/bundle" -N'
 
-# Reload the shell (i.e. invoke as a login shell)
-alias reload!="exec ${SHELL} -l"
+# History
+alias hsg='history -E 1| grep'
 
 # vim
-alias v="vim"
-alias vi="vim"
-alias nvim='vim -N -u NONE -i NONE'
+alias vi='vim'
+alias v='vim'
+alias vir='vim -R' # Read only
+alias vr='vim -R' # Read only
+alias nvim='vim -N -u NONE -i NON' # Use plain vim
+
+# IP addresses
+# alias ip="dig +short myip.opendns.com @resolver1.opendns.com" # to be fix
+# alias localip="ipconfig getifaddr en1" # to be fix
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+# etc
+alias sudo='sudo ' # Enable aliases to be 'sudo' ed
+alias cpwd='echo -n $PWD | pbcopy' # pwd copy for macOS
+alias cpwd='echo -n $PWD | pbcopy' # pwd copy for Linux
+
+# git
+alias g="git"
+# }}}
 

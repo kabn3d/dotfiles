@@ -122,9 +122,6 @@ alias g="git"
 alias dark="base16_solarized-dark"
 alias light="base16_solarized-light"
 
-# for OSX
-alias ql="qlmanage -p *"
-
 # }}}
 
 # Ignore history
@@ -134,6 +131,7 @@ zshaddhistory() {
 
     # Only those that satisfy all of the following conditions are added to the history
     [[ ${#line} -ge 5
+       && ${cmd} != ..*
        && ${cmd} != ll
        && ${cmd} != l
        && ${cmd} != ls
