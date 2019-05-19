@@ -295,3 +295,4 @@ nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 " }}}
 
 autocmd FileType c setlocal commentstring=//\ %s
+
