@@ -19,7 +19,7 @@ eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # setopt.zsh {{{
 
-# History
+# History options
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY # Record start and end
 setopt HIST_SAVE_NO_DUPS
@@ -42,16 +42,14 @@ setopt COMPLETE_ALIASES
 # setopt AUTO_MENU
 
 setopt AUTO_CD
-function chpwd() {ls -lFh ${colorflag}}
 # setopt AUTO_PUSHD
 # setopt PUSHD_IGNORE_DUPS
 
 # }}}
 
 # aliases.zsh {{{
-
-# Reload zsh config
 alias reload!='source ~/.zshrc'
+
 # Reload the shell (i.e. invoke as login shell)
 alias relogin!='exec $SHELL -l'
 
@@ -65,6 +63,12 @@ alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
 # Remove broken symlinks
 alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
 
+# cd command
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 # Detect which 'ls' flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU 'ls'
     colorflag='--color'
@@ -72,18 +76,14 @@ else # macOS 'ls'
     colorflag='-G'
 fi
 
-# Filesystem aliases
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-
 alias ls="ls ${colorflag}" # Always use color output for 'ls'
 alias l="ls -lAhF ${colorflag}"    # Show hidden all files
 alias la="ls -AF ${colorflag}"     # Show hidden files
 alias ll="ls -lFh ${colorflag}"    # Show all files in long format
 alias lr="ls -lR ${colorflag}"     # Recursive ls
 alias lld="ls -l | grep ^d"        # Show only directories
+
+function chpwd() {ls -lFh ${colorflag}}
 
 # Helpers
 alias grep='grep --color=auto'
