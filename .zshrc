@@ -54,11 +54,9 @@ function chpwd() {ls -lFh ${colorflag}}
 alias reload!='source ~/.zshrc'
 # Reload the shell (i.e. invoke as login shell)
 alias relogin!='exec $SHELL -l'
-# Clear all history
-# alias clrhs!='rm -f ~/.zsh_history && exec -l $SHELL'
 
 alias path='echo -e ${PATH//:/\\n}'
-# 'clean' + 'cd'
+# clean and cd
 alias clr='cd ~ && clear'
 
 # Recursively delete `.DS_Store` files
