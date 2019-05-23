@@ -12,7 +12,7 @@ Plugin 'kien/ctrlp.vim' " fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
-Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc
+Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc / gc
 Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'yggdroot/indentline' "indent line
 
@@ -291,6 +291,7 @@ endif
 " Indent Line
 let g:indentLine_char = '|'
 let g:indentLine_faster = 1
+let g:indent_guides_enable_on_vim_startup = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 " }}}
 
