@@ -3,7 +3,6 @@
 # git clone
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-git clone https://github.com/OkbfDr0NBA/dotfiles.git ~/mine
 
 #
 #         _ _        _       _
@@ -57,7 +56,9 @@ is_at_least() {
     fi
 
     atleast="$(echo $1 | sed -e 's/\.//g')"
-    version="$(echo ${BASH_VERSION:-0.0.0} | sed -e 's/^\([0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}\).*/\1/' | sed -e 's/\.//g')"
+    version="$(echo ${BASH_VERSION:-0.0.0} | \
+        sed -e 's/^\([0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}\).*/\1/' | \
+        sed -e 's/\.//g')"
 
     # zero padding
     while [ ${#atleast} -ne 6 ]
