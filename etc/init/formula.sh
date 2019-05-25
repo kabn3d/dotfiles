@@ -40,6 +40,7 @@ brew install clisp
 # brew install tcptrace
 # brew install ucspi-tcp # `tcpserver` etc.
 # brew install xpdf
+# brew install xz
 
 # Remove outdated versions from the cellar.
 brew cleanup
