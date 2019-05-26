@@ -117,6 +117,7 @@ alias cpwd='echo -n $PWD | pbcopy' # pwd copy for Linux
 alias g="git"
 
 # Color Themas
+# to be fix
 alias dark="base16_solarized-dark"
 alias light="base16_solarized-light"
 
