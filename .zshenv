@@ -7,7 +7,6 @@ typeset -U path PATH
     # /usr/local/share/zsh/site-functions(N-/) \
     # $fpath \
     # )
-    #
 export PATH="/usr/local/bin:$PATH"
 
 # autoload
