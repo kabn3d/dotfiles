@@ -21,9 +21,9 @@ eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # History options
 setopt SHARE_HISTORY
-setopt EXTENDED_HISTORY # Record start and end
+setopt EXTENDED_HISTORY # Add Unix time & run time
 setopt HIST_SAVE_NO_DUPS
-setopt HIST_NO_STORE
+setopt HIST_NO_STORE # No store "history" & "fc -l"
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
@@ -100,7 +100,7 @@ alias hsg='history -E 1| grep'
 alias vi='vim'
 alias v='vim'
 alias vir='vim -R' # Read only
-alias vr='vim -R' # Read only
+alias vr='vim -R'  # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
 # IP addresses
