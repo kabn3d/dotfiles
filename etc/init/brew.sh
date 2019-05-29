@@ -14,7 +14,7 @@ formulae={
     vim
     git
     tmux
-    reattach-to-user-namespace
+    reattach-to-user-namespace # for copy in tmux
     fzf
     tree
     zsh
@@ -28,10 +28,10 @@ echo "=============================="
 /usr/local/opt/fzf/install --all --no-bash --no-fish
 
 # after the install, install neovim python libraries
-echo -e "\\n\\nRunning Neovim Python install"
-echo "=============================="
-pip2 install --user neovim
-pip3 install --user neovim
+# echo -e "\\n\\nRunning Neovim Python install"
+# echo "=============================="
+# pip2 install --user neovim
+# pip3 install --user neovim
 
 # Change the default shell to zsh
 zsh_path="$( command -v zsh )"

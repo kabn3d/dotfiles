@@ -199,7 +199,7 @@ nnoremap x "_x
 " Delete hilight to ESC twice
 nnoremap <silent> <esc><esc> :noh<return>
 
-" ';;' instead of <ESC> and save current file
+" 'kk' instead of <ESC> and save current file
 inoremap <silent> kk <ESC>
 inoremap <silent> kk  <ESC>:w<CR>
 
