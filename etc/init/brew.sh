@@ -7,7 +7,7 @@ if test ! "$( command -v brew )"; then
 fi
 # full-path or ruby command
 
-echo -e "\\n\\nInstalling homebrew packages..."
+echo -e "\\n\\n==>Installing homebrew packages..."
 echo "=============================="
 
 formulae={
@@ -23,7 +23,7 @@ formulae={
 }
 
 # After the install, setup fzf
-echo -e "\\n\\nRunning fzf install script..."
+echo -e "\\n\\n==>Running fzf install script..."
 echo "=============================="
 /usr/local/opt/fzf/install --all --no-bash --no-fish
 
