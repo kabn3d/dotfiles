@@ -33,6 +33,7 @@ echo "=============================="
 # pip2 install --user neovim
 # pip3 install --user neovim
 
+
 # Change the default shell to zsh
 zsh_path="$( command -v zsh )"
 if ! grep "$zsh_path" /etc/shells; then
