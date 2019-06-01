@@ -22,6 +22,7 @@ Plugin 'chriskempson/base16-vim'
 call vundle#end()
 filetype plugin indent on
 
+
 set nocompatible " not compatible with vi
 set autoread " detect when a file is changed
 
