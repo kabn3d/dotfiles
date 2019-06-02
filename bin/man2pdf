@@ -1,6 +1,4 @@
 #!/bin/bash
-# written by Shotaro Fujimoto (https://github.com/ssh0)
-#=#=#=
 # Convert man page to pdf file using ps2pdf
 
 if [ "$1" = '-h' ]; then
@@ -8,7 +6,7 @@ if [ "$1" = '-h' ]; then
   exit 0
 fi
 
-output_dir="$HOME/Dropbox/document/man"
+output_dir="$HOME/Downloads/"
 
 if ret="$(command -p man -t "$1")"; then
   echo "${ret}" | ps2pdf -sPAPERSIZE=a4 -sOutputFile="${output_dir}/$1".pdf - &&
