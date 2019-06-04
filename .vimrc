@@ -17,11 +17,13 @@ Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'yggdroot/indentline' "indent line
 
 " colorschemes
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 filetype plugin indent on
 
+" colorscheme solarized
 
 set nocompatible " not compatible with vi
 set autoread " detect when a file is changed
