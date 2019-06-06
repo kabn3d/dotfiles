@@ -106,6 +106,12 @@ set title " set terminal title
 set showmatch " show matching braces
 set mat=2 " how many tenths of a second to blink
 set display=uhex
+
+" status line
+"to be fix
+set statusline=%F%m%h%w\ %<[%{&fenc!=''?&fenc:&enc}]\ [%{&ff}]\ %y\ %=[CODE=0x%02B]\ [POS=%l/%L(%02v)]
+" i.e. [1] [master] [vim/vimrc][vim][unix:utf-8]            17,238/381 (59%)
+
 " }}}
 
 " highlight conflicts
@@ -116,8 +122,6 @@ set autoindent " automatically set indent of new line
 set smartindent
 
 set laststatus=2 " show the satus line all the time
-set statusline=%F%m%h%w\ %<[%{&fenc!=''?&fenc:&enc}]\ [%{&ff}]\ %y\ %=[CODE=0x%02B]\ [POS=%l/%L(%02v)]
-
 " Show line and column number
 set ruler
 
