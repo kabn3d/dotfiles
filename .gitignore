@@ -1,5 +1,7 @@
-.DS_Store
 *~
+.DS_Store
 .config/*
 .zsh/history/
 .vim/bundle/
+.zshrc.local
+

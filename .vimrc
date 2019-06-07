@@ -57,6 +57,7 @@ set foldnestmax=10 " deepest fold is 10 levels
 set nofoldenable " don't fold by default
 set foldlevel=1
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => User Interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,8 +77,15 @@ set mat=2 " how many tenths of a second to blink
 " When the search is finished, search again from the BOF
 set wrapscan
 
+" color scheme {{{
 " switch syntax highlighting on
 syntax enable on
+
+set background=dark
+" set background=light
+
+" colorscheme solarized
+" }}}
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -106,6 +114,8 @@ set title " set terminal title
 set showmatch " show matching braces
 set mat=2 " how many tenths of a second to blink
 set display=uhex
+
+
 
 " status line
 "to be fix
