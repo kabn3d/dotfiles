@@ -4,10 +4,9 @@ limit coredumpsize 0
 # keybind like emacs
 bindkey -e
 
-PROMPT_SYMBOL='❯'
 local p_cdir="%F{blue}%B%~%b%f"$'\n'
-# local p_info="%n@%m"
-PROMPT="$p_cdir$PROMPT_SYMBOL "
+local p_info="%B%n@%m%b"
+PROMPT="$p_cdir$p_info%B$%b "
 
 # setopt.zsh {{{
 setopt SHARE_HISTORY
