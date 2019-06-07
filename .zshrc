@@ -135,7 +135,7 @@ zshaddhistory() {
        && ${cmd} != uname
        && ${cmd} != md5sum
        && ${cmd} != pacman
-	   && ${cmd} != xdg-open
+       && ${cmd} != xdg-open
        && ${cmd} != traceroute
        && ${cmd} != speedtest-cli
     ]]

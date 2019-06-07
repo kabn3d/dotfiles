@@ -69,6 +69,11 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=100000
 
+# add a comment
+if [[ $UID == 0 ]]; then
+    unset HISTFILE
+    export SAVEHIST=0
+fi
 
 # fzf - command-line fuzzy finder (https://github.com/junegunn/fzf)
 export FZF_DEFAULT_OPTS="--extended --ansi --multi"
