@@ -57,10 +57,8 @@ set foldnestmax=10 " deepest fold is 10 levels
 set nofoldenable " don't fold by default
 set foldlevel=1
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => User Interface
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Searching
+
+" User Interface {{{
 set ignorecase " case insensitive searching
 set smartcase " case-sensitive if expresson contains a capital letter
 set hlsearch
@@ -85,10 +83,12 @@ set background=dark
 " colorscheme solarized
 " }}}
 
+
 set encoding=utf-8
 set fileencoding=utf-8
 " let base16colorspace=256  " Access colors present in 256 colorspace
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
+
 
 " view.vim {{{
 set number " show line numbers
@@ -170,8 +170,8 @@ set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 " set listchars=tab:→\ ,eol:¬,space:⋅,extends:❯,precedes:❮
 set showbreak=↪
 
+
 " mapping.vim {{{
-"
 " Define mapleader
 let g:mapleader = ','
 let g:maplocalleader = ','
@@ -259,6 +259,7 @@ imap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 " }}}
+
 
 " plugin.vim {{{
 " close NERDTree after a file is opened
