@@ -1,21 +1,13 @@
 umask 022
 limit coredumpsize 0
 
-# keybind
-bindkey -d
+# keybind like emacs
 bindkey -e
 
 PROMPT_SYMBOL='❯'
 local p_cdir="%F{blue}%B%~%b%f"$'\n'
 # local p_info="%n@%m"
 PROMPT="$p_cdir$PROMPT_SYMBOL "
-
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-[ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-eval "$("$BASE16_SHELL/profile_helper.sh")"
-
 
 # setopt.zsh {{{
 
@@ -34,36 +26,26 @@ setopt IGNORE_EOF
 setopt NO_BEEP
 setopt INTERACTIVE_COMMENTS
 setopt CORRECT
+setopt CORRECT_ALL
 setopt PRINT_EIGHT_BIT
+setopt PRINT_EXIT_VALUE
 setopt NO_FLOW_CONTROL
 setopt COMPLETE_ALIASES
-
-# setopt AUTO_LIST
-# setopt AUTO_MENU
+setopt LIST_TYPES
+setopt CHASE_LINKS
+setopt NOAUTOREMOVESLASH
 
 setopt AUTO_CD
-# setopt AUTO_PUSHD
-# setopt PUSHD_IGNORE_DUPS
+setopt AUTO_MENU
+setopt AUTO_LIST
+setopt AUTO_PARAM_KEYS # remove trailing spaces after completion if needed
+setopt AUTO_PARAM_SLASH
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
 
 # }}}
 
 # aliases.zsh {{{
-alias reload!='source ~/.zshrc'
-
-# Reload the shell (i.e. invoke as login shell)
-alias relogin!='exec $SHELL -l'
-
-alias path='echo -e ${PATH//:/\\n}'
-# clean and cd
-alias clr='cd ~ && clear'
-
-# Recursively delete `.DS_Store` files
-alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
-
-# Remove broken symlinks
-alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
-
-# cd command
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -103,28 +85,40 @@ alias vir='vim -R' # Read only
 alias vr='vim -R'  # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
-# IP addresses
-# alias ip="dig +short myip.opendns.com @resolver1.opendns.com" # to be fix
-# alias localip="ipconfig getifaddr en1" # to be fix
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-
 # etc
+alias g="git"
+alias tm="tmux"
+
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
 alias cpwd='echo -n $PWD | pbcopy' # pwd copy for macOS
 alias cpwd='echo -n $PWD | pbcopy' # pwd copy for Linux
 
-# git
-alias g="git"
+alias reload!='source ~/.zshrc'
+
+# Reload the shell (i.e. invoke as login shell)
+alias relogin!='exec $SHELL -l'
+
+alias path='echo -e ${PATH//:/\\n}'
+# clean and cd
+alias clr='cd ~ && clear'
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
+
+# Remove broken symlinks
+alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
 
 # }}}
 
-# Ignore history
+# Ignore command
 zshaddhistory() {
     local line=${1%%$'\n'}
     local cmd=${line%% *}
 
     # Only those that satisfy all of the following conditions are added to the history
     [[ ${#line} -ge 5
+       && ${cmd} != v
+       && ${cmd} != t
        && ${cmd} != ..*
        && ${cmd} != ll
        && ${cmd} != l
@@ -132,6 +126,7 @@ zshaddhistory() {
        && ${cmd} != la
        && ${cmd} != cd
        && ${cmd} != man
+       && ${cmd} != cat
        && ${cmd} != scp
        && ${cmd} != less
        && ${cmd} != ping
@@ -148,4 +143,10 @@ zshaddhistory() {
        && ${cmd} != speedtest-cli
     ]]
 }
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+[ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+eval "$("$BASE16_SHELL/profile_helper.sh")"
 
