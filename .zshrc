@@ -10,8 +10,6 @@ local p_cdir="%F{blue}%B%~%b%f"$'\n'
 PROMPT="$p_cdir$PROMPT_SYMBOL "
 
 # setopt.zsh {{{
-
-# History options
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY # Add Unix time & run time
 setopt HIST_SAVE_NO_DUPS
@@ -42,7 +40,6 @@ setopt AUTO_PARAM_KEYS # remove trailing spaces after completion if needed
 setopt AUTO_PARAM_SLASH
 setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
-
 # }}}
 
 # aliases.zsh {{{
@@ -90,8 +87,8 @@ alias g="git"
 alias tm="tmux"
 
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
-alias cpwd='echo -n $PWD | pbcopy' # pwd copy for macOS
-alias cpwd='echo -n $PWD | pbcopy' # pwd copy for Linux
+alias dcp='echo -n $PWD | pbcopy' # pwd copy for macOS
+alias dcp='echo -n $PWD | pbcopy' # pwd copy for Linux
 
 alias reload!='source ~/.zshrc'
 
@@ -127,6 +124,7 @@ zshaddhistory() {
        && ${cmd} != cd
        && ${cmd} != man
        && ${cmd} != cat
+       && ${cmd} != pwd
        && ${cmd} != scp
        && ${cmd} != less
        && ${cmd} != ping
@@ -144,6 +142,12 @@ zshaddhistory() {
     ]]
 }
 
+# functions {{{
+function showoptions() {
+  set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'
+}
+# }}}
+#
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
