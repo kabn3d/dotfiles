@@ -57,11 +57,9 @@ set foldnestmax=10 " deepest fold is 10 levels
 set nofoldenable " don't fold by default
 set foldlevel=1
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => User Interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Searching
 set ignorecase " case insensitive searching
 set smartcase " case-sensitive if expresson contains a capital letter
@@ -115,18 +113,14 @@ set showmatch " show matching braces
 set mat=2 " how many tenths of a second to blink
 set display=uhex
 
-
-
 " status line
 "to be fix
 set statusline=%F%m%h%w\ %<[%{&fenc!=''?&fenc:&enc}]\ [%{&ff}]\ %y\ %=[CODE=0x%02B]\ [POS=%l/%L(%02v)]
 " i.e. [1] [master] [vim/vimrc][vim][unix:utf-8]            17,238/381 (59%)
-
 " }}}
 
 " highlight conflicts
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
-
 
 set autoindent " automatically set indent of new line
 set smartindent
@@ -175,7 +169,6 @@ set list
 set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 " set listchars=tab:→\ ,eol:¬,space:⋅,extends:❯,precedes:❮
 set showbreak=↪
-
 
 " mapping.vim {{{
 "
@@ -265,11 +258,9 @@ imap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
-
 " }}}
 
 " plugin.vim {{{
-
 " close NERDTree after a file is opened
 let g:NERDTreeQuitOnOpen=0
 " show hidden files in NERDTree
@@ -301,7 +292,6 @@ if filereadable(expand("~/.vimrc_background"))
     source ~/.vimrc_background
 endif
 
-
 " Indent Line
 let g:indentLine_char = '|'
 let g:indentLine_faster = 1
@@ -309,5 +299,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 " }}}
 
+" gcc
 autocmd FileType c setlocal commentstring=//\ %s
 
