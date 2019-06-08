@@ -10,7 +10,6 @@ fi
 # error: brew doctor
 
 formulae={
-    vim
     tmux
     reattach-to-user-namespace # for copy in tmux
     fzf
