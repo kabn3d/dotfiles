@@ -17,7 +17,6 @@ formulae={
     reattach-to-user-namespace # for copy in tmux
     fzf
     tree
-    zsh
     python
     zplug
 }

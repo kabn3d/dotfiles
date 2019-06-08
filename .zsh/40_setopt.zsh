@@ -1,3 +1,4 @@
+# history
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY # Add Unix time & run time
 setopt HIST_SAVE_NO_DUPS
