@@ -17,7 +17,6 @@ Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'yggdroot/indentline' "indent line
 
 " colorschemes
-" Plugin 'chriskempson/base16-vim'
 Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
