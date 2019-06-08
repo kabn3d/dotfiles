@@ -17,7 +17,7 @@ Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'yggdroot/indentline' "indent line
 
 " colorschemes
-Plugin 'chriskempson/base16-vim'
+" Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 filetype plugin indent on
