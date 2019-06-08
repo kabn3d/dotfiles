@@ -50,7 +50,6 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46
 setopt no_global_rcs
 # Add ~/bin to PATH
 export PATH="$PATH":~/bin
-export PATH="$PATH":~/.tmux/bin
 
 # Settings for golang
 export GOPATH="$HOME"
@@ -69,7 +68,7 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=100000
 
-# add a comment
+# Do not add in root
 if [[ $UID == 0 ]]; then
     unset HISTFILE
     export SAVEHIST=0
@@ -80,11 +79,6 @@ export FZF_DEFAULT_OPTS="--extended --ansi --multi"
 
 # The size of asking history
 export LISTMAX=50
-# Do not add in root
-if [[ $UID == 0 ]]; then
-    unset HISTFILE
-    export SAVEHIST=0
-fi
 
 # available $INTERACTIVE_FILTER
 export INTERACTIVE_FILTER="fzf:peco:percol:gof:pick"
