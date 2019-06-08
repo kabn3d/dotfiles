@@ -2,9 +2,11 @@
 
 # Install command-line tools using Homebrew.
 if test ! "$( command -v brew )"; then
-    echo "Installing homebrew"
+    echo -e "\\n\\n==>Installing homebrew"
     /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
+
+# error: brew doctor
 
 formulae={
     vim
@@ -16,7 +18,7 @@ formulae={
     zplug
 }
 
-cask={
+casks={
     google-chrome
     virtualbox
     vagrant
