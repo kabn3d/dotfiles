@@ -18,6 +18,7 @@ Plugin 'yggdroot/indentline' "indent line
 
 " colorschemes
 " Plugin 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
@@ -80,7 +81,8 @@ syntax enable on
 set background=dark
 " set background=light
 
-" colorscheme solarized
+colorscheme solarized
+let g:solarized_termcolors=256
 " }}}
 
 
