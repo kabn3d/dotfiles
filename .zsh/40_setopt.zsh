@@ -1,4 +1,4 @@
-# history
+# History
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY # Add Unix time & run time
 setopt HIST_SAVE_NO_DUPS
@@ -10,7 +10,6 @@ setopt HIST_REDUCE_BLANkS
 setopt HIST_FIND_NO_DUPS
 
 setopt IGNORE_EOF
-setopt NO_BEEP
 setopt INTERACTIVE_COMMENTS
 setopt CORRECT
 # setopt CORRECT_ALL
@@ -21,6 +20,11 @@ setopt COMPLETE_ALIASES
 setopt LIST_TYPES
 setopt CHASE_LINKS
 setopt NOAUTOREMOVESLASH
+
+# Beep
+setopt NO_BEEP
+setopt NO_LIST_BEEP
+setopt NO_HIST_BEEP
 
 setopt AUTO_CD
 setopt AUTO_MENU

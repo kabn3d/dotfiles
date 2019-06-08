@@ -305,3 +305,6 @@ nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 " gcc
 autocmd FileType c setlocal commentstring=//\ %s
 
+" runtime! userautoload/.vim/*.vim
+" runtime! userautoload/.vim/plugins/*.vim
+
