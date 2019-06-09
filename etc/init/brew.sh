@@ -20,7 +20,7 @@ formulae={
 
 casks={
     google-chrome
-    virtualbox
+    # virtualbox
     vagrant
     visual-studio-code
     dropbox

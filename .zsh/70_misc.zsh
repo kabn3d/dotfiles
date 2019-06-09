@@ -16,6 +16,7 @@ zshaddhistory() {
        && ${cmd} != man
        && ${cmd} != cat
        && ${cmd} != pwd
+       && ${cmd} != echo
        && ${cmd} != scp
        && ${cmd} != less
        && ${cmd} != ping
