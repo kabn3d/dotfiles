@@ -263,48 +263,6 @@ nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearc
 " }}}
 
 
-" plugin.vim {{{
-" close NERDTree after a file is opened
-let g:NERDTreeQuitOnOpen=0
-" show hidden files in NERDTree
-let NERDTreeShowHidden=1
-" Toggle NERDTree
-nmap <silent> <leader>k :NERDTreeToggle<cr>
-" expand to the path of the file in the current buffer
-nmap <silent> <leader>y :NERDTreeFind<cr>
-
-" map fuzzyfinder (CtrlP) plugin
-" nmap <silent> <leader>t :CtrlP<cr>
-nmap <silent> <leader>r :CtrlPBuffer<cr>
-let g:ctrlp_map='<leader>t'
-let g:ctrlp_dotfiles=1
-let g:ctrlp_working_path_mode = 'ra'
-
-" CtrlP ignore patterns
-
-let g:ctrlp_custom_ignore = {
-            \ 'dir': '\.git$\|node_modules$\|\.hg$\|\.svn$',
-            \ 'file': '\.exe$\|\.so$'
-            \ }
-
-" search the nearest ancestor that contains .git, .hg, .svn
-let g:ctrlp_working_path_mode = 2
-
-if filereadable(expand("~/.vimrc_background"))
-    let base16colorspace=256
-    source ~/.vimrc_background
-endif
-
-" Indent Line
-let g:indentLine_char = '|'
-let g:indentLine_faster = 1
-let g:indent_guides_enable_on_vim_startup = 1
-nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
-" }}}
-
-" gcc
-autocmd FileType c setlocal commentstring=//\ %s
-
-" runtime! userautoload/.vim/*.vim
-" runtime! userautoload/.vim/plugins/*.vim
+" runtime! autoload/*.vim
+runtime! autoload/plugins/*.vim
 
