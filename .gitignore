@@ -3,6 +3,5 @@
 .config/*
 .zsh/history/
 .vim/bundle/
-.vim/.netrwhist
 .zshrc.local
 
