@@ -52,7 +52,6 @@ set mat=2 " how many tenths of a second to blink
 " When the search is finished, search again from the BOF
 set wrapscan
 
-" color scheme {{{
 " switch syntax highlighting on
 syntax enable on
 
