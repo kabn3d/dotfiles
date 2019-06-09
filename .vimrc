@@ -113,6 +113,7 @@ set title " set terminal title
 set showmatch " show matching braces
 set mat=2 " how many tenths of a second to blink
 set display=uhex
+set cindent
 
 " status line
 "to be fix
