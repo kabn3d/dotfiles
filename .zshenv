@@ -1,12 +1,5 @@
 typeset -U path PATH
 
-# fpath=( \
-    # ~/.zsh/Completion(N-/) \
-    # ~/.zsh/functions(N-/) \
-    # ~/.zsh/plugins/zsh-completions(N-/) \
-    # /usr/local/share/zsh/site-functions(N-/) \
-    # $fpath \
-    # )
 export PATH="/usr/local/bin:$PATH"
 
 # autoload
