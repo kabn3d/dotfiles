@@ -6,8 +6,7 @@ set -ue -o pipefail
 # Prevent commands misbehaving due to locale differences
 export LC_ALL=C
 
-for f in *
-do
+for f in *; do
     [[ "$f" == ".git " ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
 
