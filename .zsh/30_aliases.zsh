@@ -3,12 +3,10 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias ls="ls ${colorflag}" # Always use color output for 'ls'
-alias l="ls -lAhF ${colorflag}"    # Show hidden all files
-alias la="ls -AF ${colorflag}"     # Show hidden files
-alias ll="ls -lFh ${colorflag}"    # Show all files in long format
-alias lr="ls -lR ${colorflag}"     # Recursive ls
-alias lld="ls -l | grep ^d"        # Show only directories
+alias ls="ls ${colorflag}"  # Always use color output for 'ls'
+alias l="ls -lAhF"          # Show hidden all files
+alias ll="ls -lFh"          # Show all files in long format
+alias lld="ls -l | grep ^d" # Show only directories
 
 # Helpers
 alias grep='grep --color=auto'
