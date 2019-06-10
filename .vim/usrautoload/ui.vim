@@ -16,7 +16,6 @@ set mat=2 " how many tenths of a second to blink
 
 " When the search is finished, search again from the BOF
 set wrapscan
-set number " show line numbers
 set wrap " turn on line wrapping
 set wrapmargin=8 " wrap lines when coming within n characters from side
 set linebreak " set soft wrapping
@@ -33,7 +32,6 @@ set noshowmode " don't show which mode disabled for PowerLine
 set wildmode=list:longest " complete files like a shell
 set shell=$SHELL
 set cmdheight=1 " command bar height
-set title " set terminal title
 set showmatch " show matching braces
 set mat=2 " how many tenths of a second to blink
 set display=uhex

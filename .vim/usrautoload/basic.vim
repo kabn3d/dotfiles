@@ -1,7 +1,24 @@
 set encoding=utf-8
 set fileencoding=utf-8
+scriptencoding utf-8
 
-set nocompatible " not compatible with vi
+set number
+
+syntax on
+
+" History size
+set history=1000
+set wrap
+
+" mute
+set t_vb=
+set novisualbell
+set noerrorbells
+
+set showcmd
+
+set notitle
+
 set autoread " detect when a file is changed
 
 " make backspace behave in a sane manner
@@ -40,19 +57,7 @@ set nofoldenable " don't fold by default
 set foldlevel=1
 
 
-" switch syntax highlighting on
-syntax enable on
-
-
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
-
-" Do not use visualbell
-set novisualbell
-set vb t_vb=
-
-" History size
-set history=1000
-set wrap
 
 " Do not use alt key on Win
 set winaltkeys=no
@@ -63,11 +68,6 @@ set cmdheight=2
 " Show current mode (insert, visual, normal, etc.)
 set showmode
 
-" Show last command in status line
-set showcmd
-
-" Lets vim set the title of the console
-set notitle
 
 set cursorline
 

@@ -1,61 +1,57 @@
 .
 ├── .bash_profile
 ├── .bashrc
+├── .dir_colors
 ├── .editorconfig
 ├── .gitignore
-├── .tmux/
-│   ├── base16.sh
-│   ├── bin/
-│   │   ├── battery*
-│   │   └── wifi*
-│   ├── theme.sh
-│   └── tmux.conf.symlink
 ├── .tmux.conf
 ├── .travis.yml
-├── .vim/
-│   ├── basic.vim
-│   ├── cmd.vim
-│   ├── env.vim
-│   ├── init.vim
-│   ├── mapping.vim
-│   ├── option.vim
-│   ├── plugin.vim
-│   └── view.vim
+├── .vim
+│   ├── .vimrc
+│   └── usrautoload
+│       ├── 10_plugin.vim
+│       ├── basic.vim
+│       ├── keymap.vim
+│       ├── plugins
+│       │   ├── ctrlp.vim
+│       │   ├── gcc.vim
+│       │   └── nerdtree.vim
+│       └── ui.vim
 ├── .vimrc
-├── .zsh/
-│   ├── 10_colors.zsh
+├── .zsh
+│   ├── 10_utils.zsh
 │   ├── 20_keybinds.zsh
 │   ├── 30_aliases.zsh
 │   ├── 40_setopt.zsh
 │   ├── 50_prompt.zsh
 │   ├── 60_config.zsh
+│   ├── 70_misc.zsh
 │   └── Makefile
 ├── .zshenv
 ├── .zshrc
 ├── Makefile
 ├── README.md
-├── bin/
-│   ├── backup*
-│   ├── isdir*
-│   ├── isfile*
-│   ├── man2pdf*
-│   └── tarbz2*
-├── doc/
+├── bin
+│   ├── backup
+│   ├── man2pdf
+│   └── tarbz2
+├── doc
 │   ├── LICENSE.md
 │   ├── dotfiles.png
 │   └── tree.txt
-└── etc/
-    ├── init/
+└── etc
+    ├── init
     │   ├── Vagrantfile
     │   ├── brew.sh
     │   ├── deb.sh
     │   ├── init.sh
+    │   ├── osx.sh
     │   ├── rhel.sh
     │   └── solarized.sh
-    └── src/
-        ├── os.sh*
+    └── src
+        ├── os.sh
         ├── proxy.sh
-        ├── rm.sh*
-        └── test.sh*
+        ├── rm.sh
+        └── test.sh
 
-9 directories, 49 files
+9 directories, 45 files
