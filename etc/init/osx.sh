@@ -13,7 +13,7 @@ echo "=============================="
 defaults write com.apple.finder AppleShowAllFiles YES
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 defaults write com.apple.Finder QuitMenuItem -bool true
-
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Trackpad
 
@@ -42,5 +42,5 @@ defaults import com.apple.Terminal "$HOME/Library/Preferences/com.apple.Terminal
 killall Finder
 killall Dock
 
-echo "Finished"
+echo -e "\\n\\nFinished"
 
