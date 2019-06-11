@@ -39,7 +39,6 @@ alias reload!='source ~/.zshrc'
 # Reload the shell (i.e. invoke as login shell)
 alias relogin!='exec $SHELL -l'
 
-alias path='echo -e ${PATH//:/\\n}'
 # clean and cd
 alias clr='cd ~ && clear'
 

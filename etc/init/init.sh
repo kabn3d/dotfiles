@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-mkdir ~/src
-# git clone
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 
+
+mkdir ~/src
 
 # Check for the existence of the command.
 has() {

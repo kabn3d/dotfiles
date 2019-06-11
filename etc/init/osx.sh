@@ -16,14 +16,14 @@ defaults write com.apple.Finder QuitMenuItem -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Trackpad
-
-# Enable tap to click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 
 # Terminal.app
+
+
 
 # Use a custom theme
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
@@ -38,9 +38,7 @@ fi
 defaults import com.apple.Terminal "$HOME/Library/Preferences/com.apple.Terminal.plist"
 
 
-# restart to enable configs
+# Restart to enable configs.
 killall Finder
 killall Dock
-
-echo -e "\\n\\nFinished"
 
