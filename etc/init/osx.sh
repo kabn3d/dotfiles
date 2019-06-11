@@ -5,7 +5,7 @@ if [ "$(uname)" != "Darwin" ] ; then
   exit 1
 fi
 
-echo -e "\\n\\n==>Setting MacOS"
+printf "\n\n==>Setting MacOS.\n"
 echo "=============================="
 
 

@@ -2,7 +2,7 @@
 
 # Install command-line tools using Homebrew.
 if test ! "$( command -v brew )"; then
-    echo -e "\\n\\n==>Installing homebrew"
+    printf "\n\n==>Installing homebrew.\n"
     echo "=============================="
     /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
@@ -28,7 +28,7 @@ casks={
     dropbox
 }
 
-echo -e "\\n\\n==>Installing homebrew packages..."
+printf "\n\n==>Installing homebrew packages...\n"
 echo "=============================="
 
 for formula in "${formulae[@]}"; do

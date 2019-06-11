@@ -1,7 +1,6 @@
 #!/bin/sh
 
-echo "\\n\\n==> Start install color theme."
-echo ""
+printf "\n\n==> Start install color theme.\n"
 
 open "https://github.com/tomislav/osx-terminal.app-colors-solarized"
 

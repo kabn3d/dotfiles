@@ -11,7 +11,7 @@ has() {
 
 
 # After the install, setup fzf
-echo -e "\\n\\n==>Running fzf install script..."
+printf "\n\n==>Running fzf install script...\n"
 echo "=============================="
 /usr/local/opt/fzf/install --all --no-bash --no-fish
 
