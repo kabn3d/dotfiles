@@ -9,7 +9,9 @@ else # macOS 'ls'
     colorflag='-G'
 fi
 
-function chpwd() {ls -lFh ${colorflag}}
+function chpwd() {
+    ls -lFh ${colorflag}
+}
 
 function showoptions() {
   set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'
