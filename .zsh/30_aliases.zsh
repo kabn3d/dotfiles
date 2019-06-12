@@ -31,8 +31,9 @@ alias g="git"
 alias tm="tmux"
 
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
-alias dcp='echo -n $PWD | pbcopy' # pwd copy for macOS
-alias dcp='echo -n $PWD | pbcopy' # pwd copy for Linux
+
+alias pwdc='pwd | tr -d "\n" | pbcopy'
+alias pwdc='pwd | tr -d "\n" | pbcopy'
 
 alias reload!='source ~/.zshrc'
 

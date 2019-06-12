@@ -43,23 +43,19 @@ alias nvim='vim -N -u NONE -i NON' # Use plain vim
 # etc
 alias g="git"
 alias t="tmux"
+
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
-alias cpwd='echo -n $PWD | pbcopy' # pwd copy for macOS
-alias cpwd='echo -n $PWD | pbcopy' # pwd copy for Linux
+
+alias pwdc='pwd | tr -d "\n" | pbcopy'
+alias pwdc='pwd | tr -d "\n" | pbcopy'
 
 # Reload bash config
 alias reload!='source ~/.bashrc'
 # Reload the shell (i.e. invoke as login shell)
 alias relogin!='exec $SHELL -l'
 
-alias path='echo -e ${PATH//:/\\n}'
 # 'clean' + 'cd'
 alias clr='cd ~ && clear'
 
-# Recursively delete `.DS_Store` files
-alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
-
-# Remove broken symlinks
-alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
 # }}}
 
