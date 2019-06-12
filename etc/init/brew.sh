@@ -18,6 +18,7 @@ formulae={
     tree
     python3
     zplug
+    clisp
 }
 
 casks={
@@ -25,7 +26,7 @@ casks={
     # virtualbox
     vagrant
     visual-studio-code
-    dropbox
+    # dropbox
 }
 
 printf "\n\n==>Installing homebrew packages...\n"

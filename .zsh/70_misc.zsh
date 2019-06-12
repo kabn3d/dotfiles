@@ -17,6 +17,7 @@ zshaddhistory() {
        && ${cmd} != cat
        && ${cmd} != pwd
        && ${cmd} != echo
+       && ${cmd} != touch
        && ${cmd} != vim
        && ${cmd} != scp
        && ${cmd} != less
