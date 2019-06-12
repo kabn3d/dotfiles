@@ -1,5 +1,5 @@
 " Setting up Vundle - the vim plugin bundler
-let iCanHazVundle=1
+let iCanHasVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 
 if !filereadable(vundle_readme)
@@ -8,7 +8,7 @@ if !filereadable(vundle_readme)
     echo ""
     silent !mkdir -p ~/.vim/bundle
     silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
-    let iCanHazVundle=0
+    let iCanHasVundle=0
 endif
 
 " load plugins from vundle
@@ -31,7 +31,7 @@ Plugin 'yggdroot/indentline' "indent line
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
 
-if iCanHazVundle == 0
+if iCanHasVundle == 0
     echo "Installing Vundles, please ignore key map error messages"
     echo ""
     :PluginInstall

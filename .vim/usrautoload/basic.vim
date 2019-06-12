@@ -13,6 +13,9 @@ set t_vb=
 set novisualbell
 set noerrorbells
 
+" if
+" endif
+
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
