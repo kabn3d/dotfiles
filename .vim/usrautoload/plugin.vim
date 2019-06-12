@@ -4,7 +4,6 @@ let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 
 if !filereadable(vundle_readme)
     echo "==>Installing Vundle.."
-    "fix
     echo ""
     silent !mkdir -p ~/.vim/bundle
     silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
