@@ -21,6 +21,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.finder FinderSounds -bool no
 defaults write com.apple.CrashReporter DialogType none
 defaults write com.apple.dock no-bouncing -bool true
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
 chflags nohidden ~/Library
 
 
@@ -30,8 +31,18 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 
-# Terminal.app
+# Safari
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
 
+
+# misc
+defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE H:mm'
+defaults write com.apple.screensaver askForPassword -int 1
+
+
+
+# Terminal.app
+defaults write com.apple.Terminal ShowLineMarks -int 0
 
 
 # Use a custom theme

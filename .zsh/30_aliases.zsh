@@ -49,3 +49,6 @@ alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
 # Remove broken symlinks
 alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
 
+# ROT13-encode text. Works for decoding, too! ;)
+alias rot13='tr a-zA-Z n-za-mN-ZA-M'
+
