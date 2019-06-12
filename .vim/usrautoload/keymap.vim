@@ -30,6 +30,13 @@ nnoremap x "_x
 " Delete hilight to ESC twice
 nnoremap <silent> <esc><esc> :noh<return>
 
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
 " 'kk' instead of <ESC> and save current file
 inoremap <silent> kk <ESC>
 inoremap <silent> kk  <ESC>:w<CR>
