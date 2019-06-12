@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 printf "\n\n==> Start install color theme.\n"
 
