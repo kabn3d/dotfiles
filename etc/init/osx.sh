@@ -14,6 +14,15 @@ defaults write com.apple.finder AppleShowAllFiles YES
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 defaults write com.apple.Finder QuitMenuItem -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+defaults write com.apple.finder PathBarRootAtHome -bool yes
+defaults write com.apple.finder DisableAllAnimations -bool true
+defaults write -g NSScrollViewRubberbanding -bool no
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.finder FinderSounds -bool no
+defaults write com.apple.CrashReporter DialogType none
+defaults write com.apple.dock no-bouncing -bool true
+chflags nohidden ~/Library
+
 
 # Trackpad
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
