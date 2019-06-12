@@ -3,6 +3,6 @@
 .config/*
 .zsh/history/
 .vim/bundle/
-.vim/backup/
+.vim/backup/*
 .zshrc.local
 
