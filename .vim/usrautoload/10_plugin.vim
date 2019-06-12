@@ -1,11 +1,22 @@
+" Setting up Vundle - the vim plugin bundler
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "==>Installing Vundle.."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
+    let iCanHazVundle=0
+endif
+
 " load plugins from vundle
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
 
+call vundle#begin()
 " let vundle manage vundle
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " utilities
 Plugin 'kien/ctrlp.vim' " fuzzy find files
@@ -19,6 +30,16 @@ Plugin 'yggdroot/indentline' "indent line
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
 
+if iCanHazVundle == 0
+    echo "Installing Vundles, please ignore key map error messages"
+    echo ""
+    :PluginInstall
+endif
+
 call vundle#end()
 filetype plugin indent on
+
+colorscheme solarized
+syntax on
+" Setting up Vundle - the vim plugin bundler end
 

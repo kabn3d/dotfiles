@@ -4,8 +4,6 @@ scriptencoding utf-8
 
 set number
 
-syntax on
-
 " History size
 set history=1000
 set wrap
