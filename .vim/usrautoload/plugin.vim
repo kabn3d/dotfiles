@@ -19,7 +19,6 @@ Plugin 'VundleVim/Vundle.vim'
 " utilities
 Plugin 'kien/ctrlp.vim' " fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc / gc
 Plugin 'editorconfig/editorconfig-vim' " editor config

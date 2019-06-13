@@ -57,7 +57,7 @@ export WORDCHARS='*?.[]~&;!#$%^(){}<>'
 
 # History file and its size
 export HISTFILE=~/.zsh_history
-export HISTSIZE=10000
+export HISTSIZE=100000
 export SAVEHIST=100000
 
 # Do not add in root
