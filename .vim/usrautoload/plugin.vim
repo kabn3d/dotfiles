@@ -29,7 +29,7 @@ Plugin 'yggdroot/indentline' "indent line
 Plugin 'altercation/vim-colors-solarized'
 
 if iCanHasVundle == 0
-    echo "Installing Vundles, please ignore key map error messages"
+    echo "==>Installing Vundles, please ignore key map error messages"
     echo ""
     :PluginInstall
 endif

@@ -8,6 +8,10 @@ if test ! "$( command -v brew )"; then
 fi
 
 # error: brew doctor
+# if test ! "$( brew doctor )"; then
+#     echo "ERROR:"
+#     exit 1
+# fi
 
 formulae={
     git

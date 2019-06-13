@@ -17,12 +17,11 @@ alias fgrep='fgrep --color=auto'
 # alias tree = 'tree -a -I "\.DS_Store|\.git|node_modules|vendor\/bundle" -N'
 
 # History
+alias history='history -E'
 alias hsg='history -E 1| grep'
 
 # vim
-alias vi='vim'
 alias v='vim'
-alias vir='vim -R' # Read only
 alias vr='vim -R'  # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 

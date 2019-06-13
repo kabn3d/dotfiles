@@ -6,7 +6,8 @@ zshaddhistory() {
     # Only those that satisfy all of the following conditions are added to the history
     [[ ${#line} -ge 5
        && ${cmd} != v
-       && ${cmd} != t
+       && ${cmd} != vr
+       && ${cmd} != tm
        && ${cmd} != ..*
        && ${cmd} != ll
        && ${cmd} != l
@@ -21,6 +22,7 @@ zshaddhistory() {
        && ${cmd} != vim
        && ${cmd} != scp
        && ${cmd} != less
+       && ${cmd} != head
        && ${cmd} != ping
        && ${cmd} != open
        && ${cmd} != file
