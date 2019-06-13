@@ -39,7 +39,7 @@ endif
 call vundle#end()
 filetype plugin indent on
 
-colorscheme solarized
 syntax on
+colorscheme solarized
 " Setting up Vundle - the vim plugin bundler end
 

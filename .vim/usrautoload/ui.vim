@@ -52,5 +52,4 @@ set ruler
 " 80-column indication
 set textwidth=79
 set colorcolumn=+1
-highlight ColorColumn guibg=#202020 ctermbg=lightgray
 
