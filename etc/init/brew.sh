@@ -30,6 +30,7 @@ casks={
     # virtualbox
     vagrant
     visual-studio-code
+    dropbox
 }
 
 printf "\n\n==>Installing homebrew packages...\n"
