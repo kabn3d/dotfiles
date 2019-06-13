@@ -12,9 +12,7 @@ endif
 
 " load plugins from vundle
 filetype off
-
 set rtp+=~/.vim/bundle/vundle/
-
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
