@@ -1,6 +1,6 @@
 " Define mapleader
-let g:mapleader = ','
-let g:maplocalleader = ','
+let g:mapleader = "\<Space>"
+let g:maplocalleader = "\<Space>"
 
 map <leader>ev :e! ~/.vimrc<cr> " edit ~/.vimrc
 
