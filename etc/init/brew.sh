@@ -21,8 +21,8 @@ formulae={
     fzf
     tree
     python3
-    zplug
     clisp
+    zplug
 }
 
 casks={
