@@ -21,7 +21,10 @@ zshaddhistory() {
        && ${cmd} != ping
        && ${cmd} != open
        && ${cmd} != file
+       && ${cmd} != uname
        && ${cmd} != which
+       && ${cmd} != type
+       && ${cmd} != file
        && ${cmd} != whois
        && ${cmd} != drill
        && ${cmd} != uname
