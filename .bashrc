@@ -13,7 +13,8 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
-# alias {{{
+
+# alias
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -34,9 +35,7 @@ alias fgrep='fgrep --color=auto'
 alias hsg='history -E 1| grep'
 
 # vim
-alias vi='vim'
 alias v='vim'
-alias vir='vim -R' # Read only
 alias vr='vim -R' # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
@@ -56,6 +55,4 @@ alias relogin!='exec $SHELL -l'
 
 # 'clean' + 'cd'
 alias clr='cd ~ && clear'
-
-# }}}
 

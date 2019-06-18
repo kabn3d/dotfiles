@@ -35,7 +35,7 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 
 
-# Misc.
+# Misc
 defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE H:mm'
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0

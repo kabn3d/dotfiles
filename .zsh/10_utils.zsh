@@ -2,9 +2,6 @@ has() {
     type "$1" > /dev/null 2>&1
 }
 
-
-
-
 is_screen_running() {
     [ -n "$WINDOW" ]
 }
@@ -20,10 +17,6 @@ is_screen_or_tmux_running() {
 shell_has_started_interactively() {
     [ -n $PS1 ]
 }
-
-
-
-
 
 
 # Detect which 'ls' flavor is in use

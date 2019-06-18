@@ -86,8 +86,8 @@ nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
 
 " Shortcut keys
-" insert date ex) 2019-02-02
-imap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
+" insert date (2019-02-02)
+inoremap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>

@@ -15,7 +15,6 @@ zshaddhistory() {
        && ${cmd} != touch
        && ${cmd} != (v|vr|vim)
        && ${cmd} != (tm|tmux)
-       && ${cmd} != scp
        && ${cmd} != less
        && ${cmd} != head
        && ${cmd} != ping
@@ -29,6 +28,7 @@ zshaddhistory() {
        && ${cmd} != drill
        && ${cmd} != uname
        && ${cmd} != pacman
+       && ${cmd} != brew
        && ${cmd} != code
     ]]
 }
