@@ -13,8 +13,8 @@ nnoremap <silent> ^ g^
 nnoremap <silent> $ g$
 
 " helpers for dealing with other people's code
-nmap \t :set ts=4 sts=4 sw=4 noet<cr>
-nmap \s :set ts=4 sts=4 sw=4 et<cr>
+noremap \t :set ts=4 sts=4 sw=4 noet<cr>
+noremap \s :set ts=4 sts=4 sw=4 et<cr>
 
 " Bracket Completion
 inoremap { {}<Left>
@@ -84,6 +84,15 @@ nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
+
+map <MiddleMouse>   <Nop>
+map <2-MiddleMouse> <Nop>
+map <3-MiddleMouse> <Nop>
+map <4-MiddleMouse> <Nop>
+inoremap <MiddleMouse>   <Nop>
+inoremap <2-MiddleMouse> <Nop>
+inoremap <3-MiddleMouse> <Nop>
+inoremap <4-MiddleMouse> <Nop>
 
 " Shortcut keys
 " insert date (2019-02-02)
