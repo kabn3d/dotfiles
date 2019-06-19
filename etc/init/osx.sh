@@ -46,7 +46,6 @@ defaults write com.apple.screencapture type -string "png"
 # Terminal.app
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
-
 # Use a custom theme
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
 TERM_PROFILE='Solarized_Dark';

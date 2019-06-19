@@ -2,7 +2,7 @@
 
 # Install command-line tools using Homebrew.
 if test ! "$( command -v brew )"; then
-    printf "\n\n==>Installing homebrew.\n"
+    printf "\n\n==> Installing homebrew.\n"
     echo "=============================="
     /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
@@ -13,34 +13,44 @@ fi
 #     exit 1
 # fi
 
-formulae={
+formulae=(
     git
     vim
     tmux
     reattach-to-user-namespace # for copy in tmux
-    fzf
+    # fzf
     tree
     python3
     clisp
-    zplug
-}
+    # zplug
+)
 
-casks={
+casks=(
     google-chrome
     # virtualbox
     vagrant
     visual-studio-code
-    dropbox
-}
+    # dropbox
+)
 
-printf "\n\n==>Installing homebrew packages...\n"
+printf "\n\n==> Installing homebrew packages...\n"
 echo "=============================="
 
 for formula in "${formulae[@]}"; do
-    brew install $formula
+    pkg_name=$( echo "$formula" | awk '{print $1}' )
+    if brew list "$pkg_name" > /dev/null 2>&1; then
+        echo "$pkg_name already installed... skipping."
+    else
+        brew install "$formula"
+    fi
 done
 
 for cask in "${casks[@]}"; do
-    brew cask install $cask
+    pkg_name=$( echo "$cask" | awk '{print $1}' )
+    if brew cask list "$pkg_name" > /dev/null 2>&1; then
+        echo "$pkg_name already installed... skipping."
+    else
+        brew cask install "$cask"
+    fi
 done
 

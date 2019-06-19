@@ -2,9 +2,7 @@
 let g:mapleader = "\<Space>"
 let g:maplocalleader = "\<Space>"
 
-map <leader>ev :e! ~/.vimrc<cr> " edit ~/.vimrc
-
-map <leader>wc :wincmd q<cr>
+nnoremap <Leader>w :w<CR>
 
 " Moving up and down work as you would expect
 nnoremap <silent> j gj
@@ -38,8 +36,7 @@ nnoremap g* g*zz
 nnoremap g# g#zz
 
 " 'kk' instead of <ESC> and save current file
-inoremap <silent> kk <ESC>
-inoremap <silent> kk  <ESC>:w<CR>
+inoremap <silent> kk <ESC>:w<CR>
 
 " like emacs
 inoremap <C-h> <Backspace>
