@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$(uname)" != "Darwin" ] ; then
+if [ "$(uname)" != "Darwin" ]; then
   echo "ERROR: Not macOS!"
   exit 1
 fi
