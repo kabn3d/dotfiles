@@ -35,8 +35,8 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
-" 'kk' instead of <ESC> and save current file
-inoremap <silent> kk <ESC>:w<CR>
+" instead of <ESC> and save current file
+inoremap <silent> <C-j> <ESC>:w<CR>
 
 " like emacs
 inoremap <C-h> <Backspace>
