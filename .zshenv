@@ -62,8 +62,8 @@ export SAVEHIST=100000
 
 # Do not add in root
 if [[ $UID == 0 ]]; then
-    unset HISTFILE
-    export SAVEHIST=0
+  unset HISTFILE
+  export SAVEHIST=0
 fi
 
 # fzf - command-line fuzzy finder (https://github.com/junegunn/fzf)
