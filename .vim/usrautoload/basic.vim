@@ -29,7 +29,6 @@ set autoread " detect when a file is changed
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,],~
 
-
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
@@ -43,12 +42,12 @@ set shiftround " round indent to a multiple of 'shiftwidth'
 
 " Use clipboard
 if has('clipboard')
-    set clipboard=unnamed,autoselect
+  set clipboard=unnamed,autoselect
 endif
 
 " Enable the use of the mouse in all modes
 if has("mouse")
-    set mouse=a
+  set mouse=a
 endif
 
 " faster redrawing
@@ -60,7 +59,6 @@ set foldnestmax=10 " deepest fold is 10 levels
 set nofoldenable " don't fold by default
 set foldlevel=1
 
-
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 
 " Do not use alt key on Win
@@ -71,7 +69,6 @@ set cmdheight=2
 
 " Show current mode (insert, visual, normal, etc.)
 set showmode
-
 
 set cursorline
 

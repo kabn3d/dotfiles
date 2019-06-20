@@ -28,6 +28,7 @@ alias nvim='vim -N -u NONE -i NON' # Use plain vim
 # etc
 alias g="git"
 alias tm="tmux"
+alias d="docker"
 
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Fail on unset variables and command errors
 set -ue -o pipefail
@@ -7,9 +7,9 @@ set -ue -o pipefail
 export LC_ALL=C
 
 for f in *; do
-    [[ "$f" == ".git " ]] && continue
-    [[ "$f" == ".DS_Store" ]] && continue
+  [[ "$f" == ".git " ]] && continue
+  [[ "$f" == ".DS_Store" ]] && continue
 
-    tar --exclude .git -jcvf $f.tar.bz2 $f
+  tar --exclude .git -jcvf $f.tar.bz2 $f
 done
 
