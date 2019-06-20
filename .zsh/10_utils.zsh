@@ -1,33 +1,33 @@
 has() {
-    type "$1" > /dev/null 2>&1
+  type "$1" > /dev/null 2>&1
 }
 
 is_screen_running() {
-    [ -n "$WINDOW" ]
+  [ -n "$WINDOW" ]
 }
 
 is_tmux_running() {
-    [ -n "$TMUX" ]
+  [ -n "$TMUX" ]
 }
 
 is_screen_or_tmux_running() {
-    is_screen_running || is_tmux_runnning
+  is_screen_running || is_tmux_runnning
 }
 
 shell_has_started_interactively() {
-    [ -n $PS1 ]
+  [ -n $PS1 ]
 }
 
 
 # Detect which 'ls' flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU 'ls'
-    colorflag='--color'
+  colorflag='--color'
 else # macOS 'ls'
-    colorflag='-G'
+  colorflag='-G'
 fi
 
 function chpwd() {
-    ls -lFh ${colorflag}
+  ls -lFh ${colorflag}
 }
 
 function showoptions() {

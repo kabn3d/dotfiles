@@ -1,5 +1,7 @@
 #!//bin/bash
 
+# error handling
+
 # Install command-line tools using Homebrew.
 if test ! "$( command -v brew )"; then
   printf "\n\n==> Installing homebrew.\n"

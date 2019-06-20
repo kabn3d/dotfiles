@@ -33,6 +33,7 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Safari
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 
 # Misc
