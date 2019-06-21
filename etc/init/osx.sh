@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$(uname)" != "Darwin" ]; then
-  echo "ERROR: Not macOS!"
+  echo "ERROR: Not macOS!" >&2
   exit 1
 fi
 
@@ -46,6 +46,7 @@ defaults write com.apple.screencapture type -string "png"
 
 # Terminal.app
 defaults write com.apple.Terminal ShowLineMarks -int 0
+defaults write com.apple.terminal StringEncodings -array 4
 
 # Use a custom theme
 # Use a modified version of the Solarized Dark theme by default in Terminal.app

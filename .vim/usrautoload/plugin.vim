@@ -3,9 +3,8 @@ let iCanHasVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 
 if !filereadable(vundle_readme)
-  echo "==>Installing Vundle.."
+  echo "==> Installing Vundle.."
   echo ""
-  silent !mkdir -p ~/.vim/bundle
   silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
   let iCanHasVundle=0
 endif
@@ -27,7 +26,7 @@ Plugin 'yggdroot/indentline' "indent line
 Plugin 'altercation/vim-colors-solarized'
 
 if iCanHasVundle == 0
-  echo "==>Installing Vundles, please ignore key map error messages"
+  echo "==> Installing Vundles, please ignore key map error messages"
   echo ""
   :PluginInstall
 endif
