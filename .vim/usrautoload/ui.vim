@@ -9,8 +9,11 @@ set nolazyredraw " don't redraw while executing macros
 
 set magic " Set magic on, for regex
 
-set showmatch " show matching braces
-set mat=2 " how many tenths of a second to blink
+" highlight brace
+" set showmatch
+" set matchtime=1
+" set matchpairs& matchpairs+=<:>
+
 
 " When the search is finished, search again from the BOF
 set wrapscan
@@ -29,8 +32,6 @@ set noshowmode " don't show which mode disabled for PowerLine
 set wildmode=list:longest " complete files like a shell
 set shell=$SHELL
 set cmdheight=1 " command bar height
-set showmatch " show matching braces
-set mat=2 " how many tenths of a second to blink
 set display=uhex
 set cindent
 

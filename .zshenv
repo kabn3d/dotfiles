@@ -2,6 +2,7 @@ typeset -U path PATH
 
 export PATH="/usr/local/bin:$PATH"
 
+
 # autoload
 autoload -Uz run-help
 autoload -Uz add-zsh-hook
@@ -20,6 +21,10 @@ export EDITOR=vim
 export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
+
+if ! command -v vim > /dev/null 2>&1; then
+  alias vim=vi
+fi
 
 # Pager
 # Less status line
@@ -57,8 +62,8 @@ export WORDCHARS='*?.[]~&;!#$%^(){}<>'
 
 # History file and its size
 export HISTFILE=~/.zsh_history
-export HISTSIZE=10000
-export SAVEHIST=100000
+export HISTSIZE=100000
+export SAVEHIST=${HISTSIZE}
 
 # Do not add in root
 if [[ $UID == 0 ]]; then
