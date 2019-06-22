@@ -4,7 +4,7 @@
 
 # Install command-line tools using Homebrew.
 if test ! "$( command -v brew )"; then
-  printf "\n\n==> Installing homebrew.\n"
+  echo "==> Installing homebrew."
   echo "=============================="
   /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
@@ -35,13 +35,13 @@ casks=(
   # dropbox
 )
 
-printf "\n\n==> Installing homebrew packages...\n"
+echo "==> Installing homebrew packages..."
 echo "=============================="
 
 for formula in "${formulae[@]}"; do
   pkg_name=$( echo "${formula}" | awk '{print $1}' )
   if brew list "${pkg_name}" > /dev/null 2>&1; then
-    echo "${pkg_name} already installed... skipping."
+    printf "${pkg_name} already installed... skipping.\n"
   else
     brew install "${formula}"
   fi
@@ -50,7 +50,7 @@ done
 for cask in "${casks[@]}"; do
   pkg_name=$( echo "$cask" | awk '{print $1}' )
   if brew cask list "${pkg_name}" > /dev/null 2>&1; then
-    echo "${pkg_name} already installed... skipping."
+    printf "${pkg_name} already installed... skipping.\n"
   else
     brew cask install "${cask}"
   fi
