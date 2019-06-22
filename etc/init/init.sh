@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-
+#!/bin/bash
 
 
 mkdir ~/src
@@ -11,7 +10,7 @@ has() {
 
 
 # After the install, setup fzf
-printf "\n\n==>Running fzf install script...\n"
+echo "==> Running fzf install script..."
 echo "=============================="
 /usr/local/opt/fzf/install --all --no-bash --no-fish
 

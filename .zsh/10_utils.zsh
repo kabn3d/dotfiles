@@ -26,11 +26,11 @@ else # macOS 'ls'
   colorflag='-G'
 fi
 
-function chpwd() {
+chpwd() {
   ls -lFh ${colorflag}
 }
 
-function showoptions() {
+showoptions() {
   set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'
 }
 
