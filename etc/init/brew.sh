@@ -1,10 +1,10 @@
-#!//bin/bash
+#!/bin/bash
 
 # error handling
 
 # Install command-line tools using Homebrew.
-if test ! "$( command -v brew )"; then
-  echo "==> Installing homebrew."
+if ! command -v brew > /dev/null; then
+  echo "==> Installing Homebrew"
   echo "=============================="
   /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
@@ -35,7 +35,7 @@ casks=(
   # dropbox
 )
 
-echo "==> Installing homebrew packages..."
+printf "\n==> Installing homebrew packages...\n"
 echo "=============================="
 
 for formula in "${formulae[@]}"; do
