@@ -30,7 +30,6 @@ set wildmenu " enhanced command line completion
 set hidden " current buffer can be put into background
 set noshowmode " don't show which mode disabled for PowerLine
 set wildmode=list:longest " complete files like a shell
-set shell=$SHELL
 set cmdheight=1 " command bar height
 set display=uhex
 set cindent

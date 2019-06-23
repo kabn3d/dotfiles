@@ -15,9 +15,10 @@ set noerrorbells
 
 " if
 " endif
-
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+
+set shell=$SHELL
 
 set showcmd
 
