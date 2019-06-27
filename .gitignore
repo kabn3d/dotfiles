@@ -1,8 +1,6 @@
 *~
 .DS_Store
-.config/*
 .zsh/history/
 .vim/bundle/
 .vim/backup/*
 .zshrc.local
-
