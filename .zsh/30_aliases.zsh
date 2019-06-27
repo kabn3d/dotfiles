@@ -25,10 +25,13 @@ alias v='vim'
 alias vr='vim -R'  # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
+if ! command -v vim > /dev/null 2>&1; then
+  alias vim=vi
+fi
+
 # etc
 alias g="git"
 alias tm="tmux"
-alias d="docker"
 
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
 
