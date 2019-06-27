@@ -4,4 +4,3 @@
 .vim/bundle/
 .vim/backup/*
 .zshrc.local
-.tmp/*
