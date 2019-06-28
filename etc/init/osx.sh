@@ -13,16 +13,23 @@ echo "=============================="
 defaults write com.apple.finder AppleShowAllFiles YES
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 defaults write com.apple.Finder QuitMenuItem -bool true
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.finder PathBarRootAtHome -bool yes
 defaults write com.apple.finder DisableAllAnimations -bool true
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 defaults write com.apple.finder FinderSounds -bool no
+
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.CrashReporter DialogType none
-defaults write com.apple.dock no-bouncing -bool true
 defaults write -g NSScrollViewRubberbanding -bool no
 chflags nohidden ~/Library
+
+
+# Dock
+defaults write com.apple.dock no-bouncing -bool true
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock tilesize -int 25
 
 
 # Trackpad
@@ -40,11 +47,13 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 
 
 # Misc
-defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE H:mm'
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE H:mm'
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.screencapture type -string "png"
+sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0
 
 
 # Terminal.app
@@ -65,6 +74,7 @@ defaults import com.apple.Terminal "~/Library/Preferences/com.apple.Terminal.pli
 
 
 # Restart to enable configs.
-killall Finder
 killall Dock
+killall Finder
+killall SystemUIServer
 
