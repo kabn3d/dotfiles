@@ -27,6 +27,7 @@ zshaddhistory() {
     && ${cmd} != whois
     && ${cmd} != drill
     && ${cmd} != uname
+    && ${cmd} != command
     && ${cmd} != pacman
     && ${cmd} != brew
     && ${cmd} != code

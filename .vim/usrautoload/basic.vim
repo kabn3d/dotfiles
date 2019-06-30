@@ -4,6 +4,12 @@ scriptencoding utf-8
 
 set number
 
+set shell=$SHELL
+
+set notitle
+set showmode
+set showcmd
+
 " History size
 set history=1000
 set wrap
@@ -18,11 +24,6 @@ set noerrorbells
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-set shell=$SHELL
-
-set showcmd
-
-set notitle
 
 set autoread " detect when a file is changed
 
@@ -67,9 +68,6 @@ set winaltkeys=no
 
 " Set command window height to reduce number of 'Press ENTER...' prompts
 set cmdheight=2
-
-" Show current mode (insert, visual, normal, etc.)
-set showmode
 
 set cursorline
 
