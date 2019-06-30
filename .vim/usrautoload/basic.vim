@@ -1,3 +1,4 @@
+" Encoding
 set encoding=utf-8
 set fileencoding=utf-8
 scriptencoding utf-8
@@ -12,7 +13,6 @@ set showcmd
 
 " History size
 set history=1000
-set wrap
 
 " mute
 set t_vb=
@@ -67,7 +67,7 @@ set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 set winaltkeys=no
 
 " Set command window height to reduce number of 'Press ENTER...' prompts
-set cmdheight=2
+set cmdheight=1
 
 set cursorline
 
