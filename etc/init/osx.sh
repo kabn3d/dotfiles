@@ -78,3 +78,5 @@ killall Dock
 killall Finder
 killall SystemUIServer
 
+printf "\nComplete!\n"
+

@@ -56,3 +56,5 @@ for cask in "${casks[@]}"; do
   fi
 done
 
+printf "\nComplete!\n"
+
