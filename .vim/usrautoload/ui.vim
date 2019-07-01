@@ -51,7 +51,7 @@ set statusline+=%r
 set statusline+=%h
 set statusline+=%w
 
-if winwidth(0) >= 130
+if winwidth(0) >= 100
   set statusline+=%F
 else
   set statusline+=%t
