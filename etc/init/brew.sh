@@ -20,7 +20,7 @@ formulae=(
   vim
   tmux
   reattach-to-user-namespace # for copy in tmux
-  # fzf
+  fzf
   tree
   python3
   clisp
