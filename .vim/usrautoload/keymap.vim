@@ -1,4 +1,4 @@
-"jDefine mapleader
+"Define mapleader
 let g:mapleader = "\<Space>"
 let g:maplocalleader = "\<Space>"
 
@@ -11,13 +11,23 @@ nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
 " F2: insert date
 inoremap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
+" F9: fix
+nnoremap <F9> :<C-u>setlocal showmatch!<CR>
+
 " F10:
 nnoremap <F10> :<C-u>setlocal number!<CR>
 inoremap <F10> <Esc>:<C-u>setlocal number!<CR><Insert>
 
-" F11:
+" F11: fix
 nnoremap <F11> :<C-u>setlocal cursorline!<CR>
 inoremap <F11> <Esc>:<C-u>setlocal cursorline!<CR><Insert>
+
+" Shortcut keys
+" Highlight the word under the cursor
+nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
+
+" instead of <ESC> and save current file
+inoremap <silent> <C-j> <ESC>
 
 " Moving up and down work as you would expect
 nnoremap <silent> j gj
@@ -35,10 +45,13 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap " ""<Left>
+inoremap ' ''<Left>
 inoremap [ []<Left>
 
 " Don't use registor when pressed 'x'
 nnoremap x "_x
+
+nnoremap Y y$
 
 " Delete hilight to ESC twice
 nnoremap <silent> <esc><esc> :noh<return>
@@ -49,9 +62,6 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
-
-" instead of <ESC> and save current file
-inoremap <silent> <C-j> <ESC>
 
 " like emacs
 inoremap <C-h> <Backspace>
@@ -105,8 +115,4 @@ inoremap <MiddleMouse>   <Nop>
 inoremap <2-MiddleMouse> <Nop>
 inoremap <3-MiddleMouse> <Nop>
 inoremap <4-MiddleMouse> <Nop>
-
-" Shortcut keys
-" Highlight the word under the cursor
-nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 

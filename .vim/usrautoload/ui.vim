@@ -11,11 +11,8 @@ set nolazyredraw " don't redraw while executing macros
 
 set magic " Set magic on, for regex
 
-" highlight brace
 " set showmatch
 " set matchtime=1
-" set matchpairs& matchpairs+=<:>
-
 
 " When the search is finished, search again from the BOF
 set wrapscan
@@ -35,7 +32,6 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 set autoindent " automatically set indent of new line
 set smartindent
-
 
 " 80-column indication
 set textwidth=79
@@ -59,9 +55,9 @@ endif
 set statusline+=%=
 set statusline+=
 set statusline+=%{fugitive#statusline()}
-set statusline+=\ Ln%l/%L
+set statusline+=\ Ln:%l/%L
 set statusline+=,
-set statusline+=Col%c
+set statusline+=Col:%c
 set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}\|%Y
 set statusline+=\  
 
