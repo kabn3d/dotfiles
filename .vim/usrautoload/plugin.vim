@@ -4,6 +4,7 @@ let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 
 if !filereadable(vundle_readme)
   echo "==> Installing Vundle..."
+  echo ""
   silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
   let HasVundle=0
 endif
