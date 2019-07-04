@@ -59,7 +59,6 @@ endif
 set statusline+=%=
 set statusline+=
 set statusline+=%{fugitive#statusline()}
-" set statusline+=\  \
 set statusline+=\ Ln%l/%L
 set statusline+=,
 set statusline+=Col%c
