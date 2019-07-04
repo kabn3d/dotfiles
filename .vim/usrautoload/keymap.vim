@@ -26,6 +26,9 @@ inoremap <F11> <Esc>:<C-u>setlocal cursorline!<CR><Insert>
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 
+" Delete hilight to ESC twice
+nnoremap <silent> <esc><esc> :noh<return>
+
 " instead of <ESC> and save current file
 inoremap <silent> <C-j> <ESC>
 
@@ -53,9 +56,6 @@ nnoremap x "_x
 
 nnoremap Y y$
 
-" Delete hilight to ESC twice
-nnoremap <silent> <esc><esc> :noh<return>
-
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap * *zz
@@ -63,7 +63,7 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
-" like emacs
+" like emacs keybinds
 inoremap <C-h> <Backspace>
 inoremap <C-d> <Delete>
 cnoremap <C-k> <UP>

@@ -23,7 +23,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'yggdroot/indentline' "indent line
 
-" python
+" Python
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kevinw/pyflakes-vim'
 Plugin 'jmcantrell/vim-virtualenv'
