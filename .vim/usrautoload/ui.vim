@@ -50,7 +50,6 @@ set statusline+=%m
 set statusline+=%r
 set statusline+=%h
 set statusline+=%w
-
 if winwidth(0) >= 100
   set statusline+=%F
 else
@@ -66,6 +65,6 @@ set statusline+=,
 set statusline+=Col%c
 set statusline+=
 set statusline+=
-set statusline+=
-set statusline+=\ %{&fenc!=''?&fenc:&enc}\ %{&ff}\ %Y
+set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}\|%Y
+set statusline+=\  
 
