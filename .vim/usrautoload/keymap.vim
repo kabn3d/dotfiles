@@ -1,8 +1,23 @@
-" Define mapleader
+"jDefine mapleader
 let g:mapleader = "\<Space>"
 let g:maplocalleader = "\<Space>"
 
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
+
+" Function key
+
+" F2: insert date
+inoremap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
+
+" F10:
+nnoremap <F10> :<C-u>setlocal number!<CR>
+inoremap <F10> <Esc>:<C-u>setlocal number!<CR><Insert>
+
+" F11:
+nnoremap <F11> :<C-u>setlocal cursorline!<CR>
+inoremap <F11> <Esc>:<C-u>setlocal cursorline!<CR><Insert>
 
 " Moving up and down work as you would expect
 nnoremap <silent> j gj
@@ -92,9 +107,6 @@ inoremap <3-MiddleMouse> <Nop>
 inoremap <4-MiddleMouse> <Nop>
 
 " Shortcut keys
-" insert date (2019-02-02)
-inoremap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
-
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 

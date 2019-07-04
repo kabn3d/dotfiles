@@ -26,12 +26,14 @@ Plugin 'yggdroot/indentline' "indent line
 " python
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kevinw/pyflakes-vim'
+Plugin 'jmcantrell/vim-virtualenv'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
 
 if HasVundle == 0
   echo "==> Installing Vundles, please ignore key map error messages"
+  echo ""
   :PluginInstall
 endif
 

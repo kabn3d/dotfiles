@@ -62,8 +62,6 @@ set statusline+=%{fugitive#statusline()}
 set statusline+=\ Ln%l/%L
 set statusline+=,
 set statusline+=Col%c
-set statusline+=
-set statusline+=
 set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}\|%Y
 set statusline+=\  
 
