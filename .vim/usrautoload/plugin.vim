@@ -25,7 +25,7 @@ Plugin 'yggdroot/indentline' "indent line
 
 " python
 Plugin 'davidhalter/jedi-vim'
-Plugin 'andviro/flake8-vim'
+" Plugin 'andviro/flake8-vim'
 Plugin 'kevinw/pyflakes-vim'
 
 " colorschemes
