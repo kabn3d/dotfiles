@@ -5,9 +5,9 @@ let g:maplocalleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
+nnoremap <Leader>s :%s/
 
 " Function key
-
 " F2: insert date
 inoremap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
