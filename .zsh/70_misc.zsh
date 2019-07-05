@@ -31,6 +31,7 @@ zshaddhistory() {
     && ${cmd} != pacman
     && ${cmd} != brew
     && ${cmd} != code
+    && ${cmd} != ggl
   ]]
 }
 
