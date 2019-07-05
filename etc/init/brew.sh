@@ -28,7 +28,6 @@ formulae=(
 )
 
 casks=(
-  google-chrome
   # virtualbox
   vagrant
   visual-studio-code
