@@ -52,7 +52,7 @@ if has("mouse")
   set mouse=a
 endif
 
-" faster redrawing
+" Enable fast terminal connection.
 set ttyfast
 
 " code folding settings

@@ -37,24 +37,48 @@ set smartindent
 set textwidth=79
 set colorcolumn=+1
 
-" status line
+" toggle invisible characters
+set list
+set listchars=tab:→\
+set listchars+=eol:¬
+set listchars+=trail:⋅
+set listchars+=extends:❯
+set listchars+=precedes:❮
+
+set showbreak=↪
+
+
+" Status Line
 set laststatus=2 " show the satus line all the time
 
+" Terminal types:
+"   1) term  (normal terminals, e.g.: vt100, xterm)
+"   2) cterm (color terminals, e.g.: MS-DOS console, color-xterm)
+"   3) gui   (GUIs)
+
+highlight User1
+  \ term=NONE
+  \ cterm=NONE  ctermbg=237    ctermfg=Grey
+  \ gui=NONE    guibg=#073642  guifg=#839496
+
+
 " i.e. [+] ~/src/project/test.py
-set statusline=%<
+set statusline=
+set statusline+=%1*
+set statusline+=%#PmenuSel#
+set statusline+=\ %{GetGitBranchName()}
 set statusline+=%m
 set statusline+=%r
 set statusline+=%h
 set statusline+=%w
 if winwidth(0) >= 100
-  set statusline+=%F
+  set statusline+=\ %F
 else
-  set statusline+=%t
+  set statusline+=\ %t
 endif
 
 set statusline+=%=
 set statusline+=
-set statusline+=%{fugitive#statusline()}
 set statusline+=\ Ln:%l/%L
 set statusline+=,
 set statusline+=Col:%c
