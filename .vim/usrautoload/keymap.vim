@@ -105,10 +105,10 @@ nnoremap <Right> <Nop>
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
 
-map <MiddleMouse>   <Nop>
-map <2-MiddleMouse> <Nop>
-map <3-MiddleMouse> <Nop>
-map <4-MiddleMouse> <Nop>
+noremap <MiddleMouse>   <Nop>
+noremap <2-MiddleMouse> <Nop>
+noremap <3-MiddleMouse> <Nop>
+noremap <4-MiddleMouse> <Nop>
 inoremap <MiddleMouse>   <Nop>
 inoremap <2-MiddleMouse> <Nop>
 inoremap <3-MiddleMouse> <Nop>
