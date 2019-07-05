@@ -6,8 +6,6 @@ if [ "$(uname)" != "Darwin" ]; then
 fi
 
 echo "==> Setting MacOS."
-echo "=============================="
-
 
 # Finder.app
 defaults write com.apple.finder AppleShowAllFiles YES

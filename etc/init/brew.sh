@@ -5,7 +5,6 @@
 # Install command-line tools using Homebrew.
 if ! command -v brew > /dev/null; then
   echo "==> Installing Homebrew"
-  echo "=============================="
   /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
 
@@ -28,14 +27,11 @@ formulae=(
 )
 
 casks=(
-  # virtualbox
   vagrant
   visual-studio-code
 )
 
 printf "\n==> Installing homebrew packages...\n"
-echo "=============================="
-
 for formula in "${formulae[@]}"; do
   pkg_name=$( echo "${formula}" | awk '{print $1}' )
   if brew list "${pkg_name}" > /dev/null 2>&1; then
