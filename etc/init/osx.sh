@@ -32,6 +32,10 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -int 25
 
 
+# Keyboard
+defaults write NSGlobalDomain KeyRepeat -int 1
+
+
 # Trackpad
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
