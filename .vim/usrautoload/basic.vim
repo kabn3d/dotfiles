@@ -7,6 +7,8 @@ set number
 
 set shell=$SHELL
 
+set shellslash
+
 set notitle
 set showmode
 set showcmd
@@ -70,10 +72,4 @@ set winaltkeys=no
 set cmdheight=1
 
 set cursorline
-
-" toggle invisible characters
-set list
-set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
-" set listchars=tab:→\ ,eol:¬,space:⋅,extends:❯,precedes:❮
-set showbreak=↪
 

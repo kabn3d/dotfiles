@@ -8,8 +8,6 @@ nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
 nnoremap <Leader>s :%s/
 
 " Function key
-" F2: insert date
-inoremap <silent> <F2> <C-R>=strftime("%Y-%m-%d")<CR>
 
 " F9: fix
 nnoremap <F9> :<C-u>setlocal showmatch!<CR>

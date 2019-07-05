@@ -22,6 +22,7 @@ Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc / gc
 Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'yggdroot/indentline' "indent line
+" Plugin 'itchyny/lightline.vim'
 
 " Python
 Plugin 'davidhalter/jedi-vim'
