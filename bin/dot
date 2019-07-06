@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DOTPATH=
+
+cd ${DOTPATH}
+
+if ! git status
+  echo ""
+
+
+git add .
+git commit -m "update"
+git push
