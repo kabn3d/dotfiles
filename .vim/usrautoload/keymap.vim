@@ -8,6 +8,8 @@ nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
 nnoremap <Leader>s :%s/
 
 " Function key
+" F2:
+nnoremap <F2> :call ToggleDark()<CR>
 
 " F9: fix
 nnoremap <F9> :<C-u>setlocal showmatch!<CR>

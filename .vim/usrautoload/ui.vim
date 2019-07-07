@@ -1,5 +1,6 @@
-set background=dark
-" set background=light
+" set background=dark
+let g:scheme_bg = 'dark'
+set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 
 set ruler
 

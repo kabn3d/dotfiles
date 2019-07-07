@@ -13,7 +13,7 @@ zshaddhistory() {
     && ${cmd} != pwd
     && ${cmd} != echo
     && ${cmd} != touch
-    && ${cmd} != (v|vr|vim)
+    # && ${cmd} != (v|vr|vim)
     && ${cmd} != (tm|tmux)
     && ${cmd} != less
     && ${cmd} != head

@@ -16,7 +16,7 @@ set showcmd
 " History size
 set history=1000
 
-" mute
+" Mute
 set t_vb=
 set novisualbell
 set noerrorbells
@@ -62,8 +62,6 @@ set foldmethod=syntax " fold based on indent
 set foldnestmax=10 " deepest fold is 10 levels
 set nofoldenable " don't fold by default
 set foldlevel=1
-
-set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 
 " Do not use alt key on Win
 set winaltkeys=no
