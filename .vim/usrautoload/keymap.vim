@@ -11,12 +11,8 @@ nnoremap <Leader>s :%s/
 " F2: Toggle color scheme
 nnoremap <F2> :call ToggleDark()<CR>
 
-" Toggle syntax hilighting
-nnoremap <F7> :if exists("g:syntax_on") <Bar>
-  \   syntax off <Bar>
-  \ else <Bar>
-  \   syntax enable <Bar>
-  \ endif <CR>
+" F7: Toggle syntax hilighting
+nnoremap <F7> :call ToggleSyntax()<CR>
 
 " F9: fix
 nnoremap <F9> :<C-u>setlocal showmatch!<CR>
@@ -99,7 +95,6 @@ inoremap <C-b> <Left>
 " inoremap <C-n> <Up>
 " inoremap <C-p> <Down>
 inoremap <C-m> <CR>
-
 nnoremap <C-m> o<Esc>
 
 " Disable key binding
