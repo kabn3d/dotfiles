@@ -7,6 +7,7 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
 nnoremap <Leader>s :%s/
 
+
 " Function key
 " F2: Toggle color scheme
 nnoremap <F2> :call ToggleDark()<CR>
@@ -23,6 +24,7 @@ nnoremap <F10> :<C-u>setlocal number!<CR>
 " F11: fix
 nnoremap <F11> :<C-u>setlocal cursorline!<CR>
 inoremap <F11> <Esc>:<C-u>setlocal cursorline!<CR><Insert>
+
 
 " Shortcut keys
 " Highlight the word under the cursor
@@ -44,6 +46,7 @@ nnoremap <silent> $ g$
 noremap \t :set ts=4 sts=4 sw=4 noet<cr>
 noremap \s :set ts=4 sts=4 sw=4 et<cr>
 
+
 " Bracket Completion
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
@@ -64,6 +67,7 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+
 
 " like emacs keybinds
 inoremap <C-h> <Backspace>
@@ -96,6 +100,7 @@ inoremap <C-b> <Left>
 " inoremap <C-p> <Down>
 inoremap <C-m> <CR>
 nnoremap <C-m> o<Esc>
+
 
 " Disable key binding
 nnoremap q: <Nop>
