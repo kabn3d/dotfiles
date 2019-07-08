@@ -25,7 +25,6 @@ zshaddhistory() {
     && ${cmd} != type
     && ${cmd} != file
     && ${cmd} != whois
-    && ${cmd} != drill
     && ${cmd} != uname
     && ${cmd} != command
     && ${cmd} != pacman

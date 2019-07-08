@@ -18,12 +18,11 @@ nnoremap <F7> :call ToggleSyntax()<CR>
 " F9: fix
 nnoremap <F9> :<C-u>setlocal showmatch!<CR>
 
-" F10:
+" F10: Toggle show number
 nnoremap <F10> :<C-u>setlocal number!<CR>
 
-" F11: fix
+" F11: Toggle cursorline
 nnoremap <F11> :<C-u>setlocal cursorline!<CR>
-inoremap <F11> <Esc>:<C-u>setlocal cursorline!<CR><Insert>
 
 
 " Shortcut keys

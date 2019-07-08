@@ -21,10 +21,10 @@ set t_vb=
 set novisualbell
 set noerrorbells
 
-" if
-" endif
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+" set backupdir=~/.vim/backup
+" set directory=~/.vim/backup
+set nobackup
+set noswapfile
 
 
 set autoread " detect when a file is changed
