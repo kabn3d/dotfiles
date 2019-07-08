@@ -8,15 +8,21 @@ nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
 nnoremap <Leader>s :%s/
 
 " Function key
-" F2:
+" F2: Toggle color scheme
 nnoremap <F2> :call ToggleDark()<CR>
+
+" Toggle syntax hilighting
+nnoremap <F7> :if exists("g:syntax_on") <Bar>
+  \   syntax off <Bar>
+  \ else <Bar>
+  \   syntax enable <Bar>
+  \ endif <CR>
 
 " F9: fix
 nnoremap <F9> :<C-u>setlocal showmatch!<CR>
 
 " F10:
 nnoremap <F10> :<C-u>setlocal number!<CR>
-inoremap <F10> <Esc>:<C-u>setlocal number!<CR><Insert>
 
 " F11: fix
 nnoremap <F11> :<C-u>setlocal cursorline!<CR>
