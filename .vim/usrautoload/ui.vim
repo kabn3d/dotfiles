@@ -15,6 +15,16 @@ set magic " Set magic on, for regex
 " set showmatch
 " set matchtime=1
 
+" Use clipboard
+if has('clipboard')
+  set clipboard=unnamed,autoselect
+endif
+
+" Enable the use of the mouse in all modes
+if has("mouse")
+  set mouse=a
+endif
+
 " When the search is finished, search again from the BOF
 set wrapscan
 set wrap " turn on line wrapping
@@ -79,9 +89,9 @@ endif
 
 set statusline+=%=
 set statusline+=
+set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}\|%Y
 set statusline+=\ Ln:%l/%L
 set statusline+=,
 set statusline+=Col:%c
-set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}\|%Y
 set statusline+=\  
 
