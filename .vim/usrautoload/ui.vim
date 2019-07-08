@@ -4,7 +4,7 @@ set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 
 set ruler
 
-set ignorecase " case insensitive searching
+set ignorecase
 set smartcase " case-sensitive if expresson contains a capital letter
 set hlsearch
 set incsearch " set incremental search
