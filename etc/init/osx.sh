@@ -5,7 +5,7 @@ if [ "$(uname)" != "Darwin" ]; then
   exit 1
 fi
 
-echo "==> Setting MacOS."
+printf "\nSetting osx...\n"
 
 # Finder.app
 defaults write com.apple.finder AppleShowAllFiles YES

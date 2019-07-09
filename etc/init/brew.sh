@@ -4,7 +4,7 @@
 
 # Install command-line tools using Homebrew.
 if ! command -v brew > /dev/null; then
-  echo "==> Installing Homebrew"
+  printf "\n==> Installing homebrew...\n"
   /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
 
