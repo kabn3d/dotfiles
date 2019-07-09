@@ -62,7 +62,6 @@ sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerStat
 defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use a custom theme
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
 TERM_PROFILE='Solarized_Dark';
 TERM_PATH='./';
