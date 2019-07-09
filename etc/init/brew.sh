@@ -28,7 +28,6 @@ formulae=(
 
 casks=(
   vagrant
-  visual-studio-code
 )
 
 printf "\n==> Installing homebrew packages...\n"
