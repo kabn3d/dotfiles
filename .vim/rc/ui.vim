@@ -44,9 +44,13 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 set autoindent " automatically set indent of new line
 set smartindent
 
-" 80-column indication
 set textwidth=79
-set colorcolumn=+1
+
+" 80-column indication
+if has('syntax')
+  set cursorline
+  set colorcolumn=+1
+endif
 
 " toggle invisible characters
 set list

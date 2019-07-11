@@ -59,5 +59,3 @@ set winaltkeys=no
 " Set command window height to reduce number of 'Press ENTER...' prompts
 set cmdheight=1
 
-set cursorline
-
