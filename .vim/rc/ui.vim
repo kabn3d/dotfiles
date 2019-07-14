@@ -12,8 +12,8 @@ set nolazyredraw " don't redraw while executing macros
 
 set magic " Set magic on, for regex
 
-" set showmatch
-" set matchtime=1
+set showmatch
+set matchtime=1
 
 " Use clipboard
 if has('clipboard')
