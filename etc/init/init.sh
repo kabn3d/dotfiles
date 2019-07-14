@@ -1,8 +1,6 @@
 #!/bin/bash
 
 
-mkdir ~/src
-
 # Check for the existence of the command.
 has() {
   type "$1" > /dev/null 2>&1
@@ -10,8 +8,7 @@ has() {
 
 
 # After the install, setup fzf
-echo "==> Running fzf install script..."
-echo "=============================="
+printf"==> \nRunning fzf install script...\n"
 /usr/local/opt/fzf/install --all --no-bash --no-fish
 
 # Change the default shell to zsh

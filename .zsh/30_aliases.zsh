@@ -37,10 +37,10 @@ alias sudo='sudo ' # Enable aliases to be 'sudo' ed
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 
-alias reload!='source ~/.zshrc'
+alias reload='source ~/.zshrc'
 
 # Reload the shell (i.e. invoke as login shell)
-alias relogin!='exec $SHELL -l'
+alias relogin='exec $SHELL -l'
 
 # clean and cd
 alias clr='cd ~ && clear'
