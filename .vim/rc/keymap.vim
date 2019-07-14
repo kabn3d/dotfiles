@@ -26,14 +26,15 @@ nnoremap <F11> :<C-u>setlocal cursorline!<CR>
 
 
 " Shortcut keys
+inoremap <silent> <C-j> <esc>
+noremap! <C-j> <esc>
+
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 
 " Delete hilight to ESC twice
 nnoremap <silent> <esc><esc> :noh<return>
 
-" instead of <ESC> and save current file
-inoremap <silent> <C-j> <ESC>
 
 " Moving up and down work as you would expect
 nnoremap <silent> j gj
@@ -93,8 +94,6 @@ inoremap <C-a> <Home>
 inoremap <C-d> <Del>
 inoremap <C-f> <Right>
 inoremap <C-b> <Left>
-" inoremap <C-n> <Up>
-" inoremap <C-p> <Down>
 inoremap <C-m> <CR>
 nnoremap <C-m> o<Esc>
 
