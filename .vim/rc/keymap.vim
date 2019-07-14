@@ -69,8 +69,6 @@ nnoremap g# g#zz
 
 
 " like emacs keybinds
-inoremap <C-h> <Backspace>
-inoremap <C-d> <Delete>
 cnoremap <C-k> <UP>
 cnoremap <C-j> <DOWN>
 cnoremap <C-l> <RIGHT>
@@ -89,9 +87,9 @@ cnoremap <C-f> <Right>
 cnoremap <C-d> <Del>
 cnoremap <C-h> <BS>
 
+inoremap <C-h> <Backspace>
+inoremap <C-d> <Delete>
 inoremap <C-a> <Home>
-inoremap <C-e> <End>
-inoremap <C-h> <BS>
 inoremap <C-d> <Del>
 inoremap <C-f> <Right>
 inoremap <C-b> <Left>

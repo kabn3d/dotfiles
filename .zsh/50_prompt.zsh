@@ -4,7 +4,7 @@ PROMPT="$p_cdir$p_info%B$%b "
 
 
 prompt_git() {
-  local s='';
+  local sign='';
   local branchName='';
 
 
@@ -14,17 +14,17 @@ prompt_git() {
 
 
       if ! $(git diff --quiet --ignore-submodulws --cached); then
-        s+='+';
+        sign+='+';
       fi;
 
 
       if ! $(git diff-files --quiet --ignore-submodules --); then
-        s+='!';
+        sign+='!';
       fi;
 
 
       if [ -n "$(git ls-files --others --execlude-standard)" ]; then
-        s+='?';
+        sign+='?';
       fi;
     fi;
   fi;
