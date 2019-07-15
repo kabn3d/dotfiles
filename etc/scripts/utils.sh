@@ -7,7 +7,7 @@ cmd_exists() {
 
 
 has() {
-  cmd
+  cmd_existsd
 }
 
 
