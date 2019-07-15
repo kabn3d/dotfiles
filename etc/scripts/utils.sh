@@ -21,6 +21,10 @@ get_os_ver() {
 }
 
 
+is_git_repository() {
+  git rev-parse &> /dev/null
+}
+
 print_err() {
 
 }
