@@ -1,12 +1,12 @@
 " Setting up Vundle - the vim plugin bundler
-let HasVundle=1
+let has_vundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 
 if !filereadable(vundle_readme)
   echo "==> Installing Vundle..."
   echo ""
   silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
-  let HasVundle=0
+  let has_vundle=0
 endif
 
 " load plugins from vundle
@@ -32,7 +32,7 @@ Plugin 'jmcantrell/vim-virtualenv'
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
 
-if HasVundle == 0
+if has_vundle == 0
   echo "==> Installing Vundles, please ignore key map error messages"
   echo ""
   :PluginInstall
