@@ -1,4 +1,3 @@
-#
 # For more information about the configurations used
 # in this file, please see the Travis CI documentation.
 
@@ -30,5 +29,4 @@
 #   - ./test/main.sh
 
 # sudo: required
-
 
