@@ -31,6 +31,7 @@ casks=(
 )
 
 printf "\n==> Installing homebrew packages...\n"
+
 for formula in "${formulae[@]}"; do
   pkg_name=$( echo "${formula}" | awk '{print $1}' )
   if brew list "${pkg_name}" > /dev/null 2>&1; then
