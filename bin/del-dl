@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rm -rf ~/Downloads
+rm -rf ~/Downloads/*
 
