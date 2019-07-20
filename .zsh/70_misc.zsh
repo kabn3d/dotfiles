@@ -33,4 +33,3 @@ zshaddhistory() {
     && ${cmd} != ggl
   ]]
 }
-

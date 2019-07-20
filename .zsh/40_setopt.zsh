@@ -35,4 +35,3 @@ setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
 
 setopt LONG_LIST_JOBS
-

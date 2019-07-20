@@ -30,4 +30,3 @@ prompt_git() {
   fi;
 
 }
-

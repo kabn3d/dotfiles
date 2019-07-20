@@ -14,4 +14,3 @@ if ls --color > /dev/null 2>&1; then # GNU 'ls'
 else # macOS 'ls'
   colorflag='-G'
 fi
-

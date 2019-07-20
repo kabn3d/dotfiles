@@ -55,4 +55,3 @@ alias clsym="find -L . -name . -o -type d -prune -o -type l -exec rm {} +"
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 alias path='echo -e ${PATH//:/\\n}'
-

@@ -55,4 +55,3 @@ alias relogin!='exec $SHELL -l'
 
 # 'clean' + 'cd'
 alias clr='cd ~ && clear'
-
