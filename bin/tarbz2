@@ -12,4 +12,3 @@ for f in *; do
 
   tar --exclude .git -jcvf $f.tar.bz2 $f
 done
-
