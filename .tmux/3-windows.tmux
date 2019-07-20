@@ -1,0 +1,27 @@
+## Create New Window
+new-window -1st
+
+## Horizontal split
+splitw -d
+# Vertical split
+splitw -h -d
+# Vertical split
+splitw -h -d
+## Pane Resize(Over 7 lines)
+resize-pane -U 7
+
+# Move Right Pane
+select-pane -R
+
+# Move Right Pane
+select-pane -R
+# Vertical split
+splitw -h -d
+
+# Move Right Pane
+select-pane -R
+clock
+
+# Move Under Pane
+select-pane -D
+
