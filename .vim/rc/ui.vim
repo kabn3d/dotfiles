@@ -98,4 +98,3 @@ set statusline+=\ Ln:%l/%L
 set statusline+=,
 set statusline+=Col:%c
 set statusline+=\  
-

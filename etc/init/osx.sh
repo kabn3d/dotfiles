@@ -80,4 +80,3 @@ killall Finder
 killall SystemUIServer
 
 printf "\nComplete!\n"
-

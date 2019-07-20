@@ -13,4 +13,3 @@ command! Date :call setline('.', getline('.') . strftime('%Y/%m/%d'))
 
 " fix
 command! -nargs=? Random echo Random(<q-args>)
-

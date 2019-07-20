@@ -31,4 +31,3 @@ indent_size = 2
 
 [*.vim]
 trim_trailing_whitespace = false
-

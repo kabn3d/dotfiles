@@ -24,4 +24,3 @@ if [[ "$SHELL" != "$zsh_path" ]]; then
 fi
 
 printf "\nComplete!\n"
-

@@ -44,4 +44,3 @@ filetype plugin indent on
 syntax on
 colorscheme solarized
 " Setting up Vundle - the vim plugin bundler end
-

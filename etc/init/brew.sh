@@ -51,4 +51,3 @@ for cask in "${casks[@]}"; do
 done
 
 printf "\nComplete!\n"
-

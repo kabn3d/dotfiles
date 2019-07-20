@@ -4,4 +4,3 @@ endif
 
 runtime! rc/*.vim
 runtime! rc/plugins/*.vim
-

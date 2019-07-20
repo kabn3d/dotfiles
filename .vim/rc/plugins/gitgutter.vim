@@ -7,4 +7,3 @@ nnoremap <silent> <leader>gg :<C-u>GitGutterToggle<CR>
 nnoremap <silent> <leader>gh :<C-u>GitGutterLineHighlightsToggle<CR>
 
 " Change symbol
-

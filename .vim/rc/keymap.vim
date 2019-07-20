@@ -117,4 +117,3 @@ inoremap <MiddleMouse>   <Nop>
 inoremap <2-MiddleMouse> <Nop>
 inoremap <3-MiddleMouse> <Nop>
 inoremap <4-MiddleMouse> <Nop>
-

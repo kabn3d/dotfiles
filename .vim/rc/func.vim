@@ -27,4 +27,3 @@ function! ToggleSyntax()
     syntax enable 
   endif
 endfunction
-

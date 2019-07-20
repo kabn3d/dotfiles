@@ -28,5 +28,3 @@ is_git_repository() {
 print_err() {
 
 }
-
-

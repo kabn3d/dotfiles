@@ -77,4 +77,3 @@ export LISTMAX=50
 export INTERACTIVE_FILTER="fzf:peco:percol:gof:pick"
 
 export DOTPATH=${0:A:h}
-

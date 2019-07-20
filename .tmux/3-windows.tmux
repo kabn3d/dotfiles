@@ -24,4 +24,3 @@ clock
 
 # Move Under Pane
 select-pane -D
-
