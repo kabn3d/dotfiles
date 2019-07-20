@@ -43,7 +43,7 @@ alias reload='source ~/.zshrc'
 alias relogin='exec $SHELL -l'
 
 # clean and cd
-alias clr='cd ~ && clear'
+alias c='cd ~ && clear'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find ${HOME} -name '*.DS_Store' -type f -ls -delete"
