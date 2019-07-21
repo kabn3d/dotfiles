@@ -36,7 +36,6 @@ alias hsg='history -E 1| grep'
 
 # vim
 alias v='vim'
-alias vr='vim -R' # Read only
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
 # etc
@@ -49,9 +48,9 @@ alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 
 # Reload bash config
-alias reload!='source ~/.bashrc'
+alias reload='source ~/.bashrc'
 # Reload the shell (i.e. invoke as login shell)
-alias relogin!='exec $SHELL -l'
+alias relogin='exec $SHELL -l'
 
 # 'clean' + 'cd'
-alias clr='cd ~ && clear'
+alias c='cd ~ && clear'
