@@ -1,3 +1,9 @@
+mkcd() {
+  mkdir -p "$1"
+  [ $? -eq 0 ] && cd "$1"
+}
+
+
 ggl(){
   if [ $(echo $1 | egrep "^-[cfs]$") ]; then
     local opt="$1"
@@ -23,3 +29,4 @@ chpwd() {
 showoptions() {
   set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'
 }
+
