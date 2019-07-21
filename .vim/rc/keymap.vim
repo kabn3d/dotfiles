@@ -4,7 +4,7 @@ let g:maplocalleader = "\<Space>"
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>r :source ~/.vimrc<CR>:noh<CR>
+nnoremap <Leader>r :source ~/.vimrc<CR>:nohlsearch<CR>
 nnoremap <Leader>s :%s/
 
 
@@ -33,7 +33,7 @@ noremap! <C-j> <esc>
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 
 " Delete hilight to ESC twice
-nnoremap <silent> <esc><esc> :noh<return>
+nnoremap <silent> <esc><esc> :nohlsearch<CR>
 
 
 " Moving up and down work as you would expect
