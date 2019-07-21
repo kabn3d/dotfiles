@@ -1,10 +1,10 @@
-"Define mapleader
+" efine mapleader
 let g:mapleader = "\<Space>"
 let g:maplocalleader = "\<Space>"
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>r :source ~/.vimrc<CR>:nohlsearch<CR>
+nnoremap <Leader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
 nnoremap <Leader>s :%s/
 
 
@@ -28,6 +28,11 @@ nnoremap <F11> :<C-u>setlocal cursorline!<CR>
 " Shortcut keys
 inoremap <silent> <C-j> <esc>
 noremap! <C-j> <esc>
+
+nnoremap <C-h> :<C-u>help<Space>
+
+noremap ; :
+noremap : ;
 
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
@@ -58,7 +63,6 @@ inoremap [ []<Left>
 
 " Don't use registor when pressed 'x'
 nnoremap x "_x
-
 nnoremap Y y$
 
 nnoremap n nzz

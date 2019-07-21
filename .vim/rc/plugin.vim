@@ -42,5 +42,6 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
+" syntax off
 colorscheme solarized
 " Setting up Vundle - the vim plugin bundler end
