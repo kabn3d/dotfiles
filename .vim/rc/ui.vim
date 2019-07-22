@@ -69,7 +69,7 @@ set showbreak=↪
 "   3) gui   (GUIs)
 
 highlight StatusLine
-  \ term=bold 
+  \ term=bold
   \ cterm=bold ctermfg=black ctermbg=white
   \ gui=NONE
 
