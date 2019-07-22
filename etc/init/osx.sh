@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$(uname)" != "Darwin" ]; then
-  echo "ERROR: Not macOS!" >&2
+  echo "ERROR:!" >&2
   exit 1
 fi
 
@@ -60,11 +60,11 @@ sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerStat
 
 
 # Terminal.app
-printf "\nInstall color scheme.\n"
-git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git ~/Downloads/scheme
-
 defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.apple.terminal StringEncodings -array 4
+
+printf "\nInstall color scheme.\n"
+git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git ~/Downloads/scheme
 
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
 TERM_PROFILE='Solarized_Dark';
