@@ -1,3 +1,5 @@
+if 0 | endif
+
 if !has('gui_running')
   let g:loaded_matchparen = 1
 endif
@@ -8,3 +10,5 @@ endif
 
 runtime! rc/*.vim
 runtime! rc/plugins/*.vim
+
+set secure

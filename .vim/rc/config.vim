@@ -5,5 +5,5 @@ augroup END
 
 " Auto reload vimrc
 " augroup vimrc
-"   autocmd BufWritePost  ~/.vimrc  so ~/.vimrc
+"   autocmd MyAutoCmd BufWritePost  ~/.vim/rc/*.vim  so ~/.vimrc
 " augroup END
