@@ -21,6 +21,7 @@ formulae=(
   reattach-to-user-namespace # for copy in tmux
   fzf
   tree
+  go
   python3
   clisp
   # zplug

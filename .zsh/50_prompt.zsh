@@ -28,5 +28,4 @@ prompt_git() {
       fi;
     fi;
   fi;
-
 }

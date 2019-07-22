@@ -6,7 +6,7 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
 nnoremap <Leader>s :%s/
-
+" nnoremap <Leader><Leader> V
 
 " Function key
 " F2: Toggle color scheme
