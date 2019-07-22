@@ -15,7 +15,7 @@ set showmode
 set showcmd
 
 " History size
-set history=1000
+set history=500
 
 " Mute
 set t_vb=
@@ -26,7 +26,6 @@ set noerrorbells
 " set directory=~/.vim/backup
 set nobackup
 set noswapfile
-
 
 set autoread " detect when a file is changed
 

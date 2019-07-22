@@ -31,9 +31,6 @@ noremap! <C-j> <esc>
 
 nnoremap <C-h> :<C-u>help<Space>
 
-noremap ; :
-noremap : ;
-
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 

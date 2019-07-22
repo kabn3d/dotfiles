@@ -1,4 +1,4 @@
-" set augroup
+" Set augroup
 augroup MyAutoCmd
   autocmd!
 augroup END
