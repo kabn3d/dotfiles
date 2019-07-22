@@ -1,13 +1,12 @@
 #!/bin/bash
 
-DOTPATH=
+# DOTPATH=${HOME}/dotfiles; export DOTPATH
 
-cd ${DOTPATH}
+# cd ${DOTPATH}
 
-if ! git status
-  echo ""
-
+#if ! git status
+# fi
 
 git add .
 git commit -m "update"
-git push
+git push -u origin master
