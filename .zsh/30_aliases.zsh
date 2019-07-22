@@ -30,7 +30,7 @@ fi
 
 # etc
 alias g="git"
-alias tm="tmux"
+alias tx="tmux"
 
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
 

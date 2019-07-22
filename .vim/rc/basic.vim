@@ -37,7 +37,7 @@ set whichwrap=b,s,h,l,<,>,[,],~
 set ffs=unix,dos,mac
 
 " Tab control
-set expandtab " tabs ftw
+set expandtab
 set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
 set tabstop=2 " the visible width of tabs
 set softtabstop=2 " edit as if the tabs are 4 characters wide

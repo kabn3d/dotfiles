@@ -9,7 +9,7 @@ ggl(){
     local opt="$1"
     shift
   fi
-  local url="https://www.google.co.jp/search?q=${*// /+}"
+  local url="https://www.google.com/search?q=${*// /+}"
   local app="/Applications"
   local g="${app}/Google Chrome.app"
   local f="${app}/Firefox.app"
