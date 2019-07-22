@@ -7,6 +7,7 @@ fi
 
 printf "\nSetting osx...\n"
 
+
 # Finder.app
 defaults write com.apple.finder AppleShowAllFiles YES
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
@@ -59,12 +60,15 @@ sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerStat
 
 
 # Terminal.app
+printf "\nInstall color scheme.\n"
+git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git ~/Downloads/scheme
+
 defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
 TERM_PROFILE='Solarized_Dark';
-TERM_PATH='./';
+TERM_PATH='${HOME}/Downloads/scheme';
 CURRENT_PROFILE="$(defaults read com.apple.terminal 'Default Window Settings')";
 if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
   open "$TERM_PATH$TERM_PROFILE.terminal"
