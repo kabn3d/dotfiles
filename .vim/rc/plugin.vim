@@ -15,6 +15,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
+" Utilitiess
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'airblade/vim-gitgutter'
@@ -29,7 +30,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'kevinw/pyflakes-vim'
 Plugin 'jmcantrell/vim-virtualenv'
 
-" colorschemes
+" Colorschemes
 Plugin 'altercation/vim-colors-solarized'
 
 if has_vundle == 0
