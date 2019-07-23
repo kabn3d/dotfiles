@@ -71,7 +71,6 @@ TERM_PROFILE="Solarized_Dark";
 TERM_PATH="${HOME}/Downloads/scheme/";
 CURRENT_PROFILE="$(defaults read com.apple.terminal 'Default Window Settings')";
 if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
-  open "${TERM_PATH}${TERM_PROFILE}.terminal"
   defaults write com.apple.Terminal "Default Window Settings" -string "${TERM_PROFILE}"
   defaults write com.apple.Terminal "Startup Window Settings" -string "${TERM_PROFILE}"
 fi

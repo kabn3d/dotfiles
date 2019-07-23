@@ -23,7 +23,6 @@ export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
 
 # Pager
-# Less status line
 export LESS='-R -f -X -i -P ?f%f:(stdin). ?lb%lb?L/%L.. [?eEOF:?pb%pb\%..]'
 export LESSCHARSET='utf-8'
 
