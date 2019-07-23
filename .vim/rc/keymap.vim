@@ -1,12 +1,14 @@
-" efine mapleader
-let g:mapleader = "\<Space>"
-let g:maplocalleader = "\<Space>"
+" Define mapleader
+let g:mapleader = ","
+let g:maplocalleader = "\<Space>""
 
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
-nnoremap <Leader>s :%s/
-" nnoremap <Leader><Leader> V
+nnoremap <LocalLeader>w :w<CR>
+nnoremap <LocalLeader>q :q<CR>
+nnoremap <LocalLeader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
+nnoremap <LocalLeader>s :%s/
+" nnoremap <LocalLeader><LocalLeader> V
+nnoremap <LocalLeader>h ^
+nnoremap <LocalLeader>l $
 
 " Function key
 " F2: Toggle color scheme
