@@ -16,7 +16,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.finder PathBarRootAtHome -bool yes
 defaults write com.apple.finder DisableAllAnimations -bool true
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}" #fix
 defaults write com.apple.finder FinderSounds -bool no
 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true

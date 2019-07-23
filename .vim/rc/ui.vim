@@ -45,6 +45,7 @@ set autoindent " automatically set indent of new line
 set smartindent
 
 set textwidth=79
+set formatoptions=q "fix
 
 " 80-column indication
 if has('syntax')
@@ -59,7 +60,6 @@ set listchars+=eol:¬
 set listchars+=trail:⋅
 set listchars+=extends:❯
 set listchars+=precedes:❮
-
 set showbreak=↪
 
 

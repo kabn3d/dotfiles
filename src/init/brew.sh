@@ -28,6 +28,7 @@ formulae=(
 )
 
 casks=(
+  virtualbox
   vagrant
 )
 
