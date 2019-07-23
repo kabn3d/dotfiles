@@ -64,16 +64,16 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.apple.terminal StringEncodings -array 4
 
 printf "\nInstall color scheme.\n"
-git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git ~/Downloads/scheme
+git clone https://github.com/wombat2357/terminal.app-scheme.git ~/Downloads/scheme
 
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
-TERM_PROFILE='Solarized_Dark';
-TERM_PATH='${HOME}/Downloads/scheme';
+TERM_PROFILE="Solarized_Dark";
+TERM_PATH="${HOME}/Downloads/scheme/";
 CURRENT_PROFILE="$(defaults read com.apple.terminal 'Default Window Settings')";
 if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
-  open "$TERM_PATH$TERM_PROFILE.terminal"
-  defaults write com.apple.Terminal "Default Window Settings" -string "$TERM_PROFILE"
-  defaults write com.apple.Terminal "Startup Window Settings" -string "$TERM_PROFILE"
+  open "${TERM_PATH}${TERM_PROFILE}.terminal"
+  defaults write com.apple.Terminal "Default Window Settings" -string "${TERM_PROFILE}"
+  defaults write com.apple.Terminal "Startup Window Settings" -string "${TERM_PROFILE}"
 fi
 defaults import com.apple.Terminal "~/Library/Preferences/com.apple.Terminal.plist"
 
