@@ -12,6 +12,7 @@ noremap <LocalLeader>h ^
 noremap <LocalLeader>l $
 noremap <LocalLeader>m %
 
+
 " Function key
 " F2: Toggle color scheme
 nnoremap <F2> :call ToggleDark()<CR>
@@ -62,8 +63,10 @@ inoremap " ""<Left>
 inoremap ' ''<Left>
 inoremap [ []<Left>
 
-" Don't use registor when pressed 'x'
+" Don't use registor when pressed 'x' and 's'
 nnoremap x "_x
+nnoremap s "_s
+
 nnoremap Y y$
 
 nnoremap n nzz
