@@ -2,13 +2,15 @@
 let g:mapleader = ","
 let g:maplocalleader = "\<Space>""
 
+" Local leader
 nnoremap <LocalLeader>w :w<CR>
 nnoremap <LocalLeader>q :q<CR>
 nnoremap <LocalLeader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
 nnoremap <LocalLeader>s :%s/
 " nnoremap <LocalLeader><LocalLeader> V
-nnoremap <LocalLeader>h ^
-nnoremap <LocalLeader>l $
+noremap <LocalLeader>h ^
+noremap <LocalLeader>l $
+noremap <LocalLeader>m %
 
 " Function key
 " F2: Toggle color scheme
