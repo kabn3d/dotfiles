@@ -5,4 +5,4 @@ let NERDTreeShowHidden=1
 " Toggle NERDTree
 nnoremap <silent> <LocalLeader>k :NERDTreeToggle<CR>
 " expand to the path of the file in the current buffer
-nnoremap <silent> <LocalLeader>y :NERDTreeFind<CR>
+" nnoremap <silent> <LocalLeader>y :NERDTreeFind<CR>

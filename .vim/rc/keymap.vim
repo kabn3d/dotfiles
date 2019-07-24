@@ -7,7 +7,11 @@ nnoremap <LocalLeader>w :w<CR>
 nnoremap <LocalLeader>q :q<CR>
 nnoremap <LocalLeader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
 nnoremap <LocalLeader>s :%s/
-" nnoremap <LocalLeader><LocalLeader> V
+nnoremap <LocalLeader>v V
+nnoremap <LocalLeader>i gg=<S-g><C-o><C-o>zz
+
+noremap <LocalLeader>d 0v$hx
+noremap <LocalLeader>y 0v$hy
 noremap <LocalLeader>h ^
 noremap <LocalLeader>l $
 noremap <LocalLeader>m %
