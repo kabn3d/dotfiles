@@ -2,7 +2,7 @@
 let g:mapleader = ","
 let g:maplocalleader = "\<Space>""
 
-" Local leader
+" Local leader mapping
 nnoremap <LocalLeader>w :w<CR>
 nnoremap <LocalLeader>q :q<CR>
 nnoremap <LocalLeader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
@@ -36,11 +36,10 @@ noremap! <C-j> <esc>
 
 nnoremap <C-h> :<C-u>help<Space>
 
+nnoremap <silent> <esc><esc> :nohlsearch<CR>
+
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
-
-" Delete hilight to ESC twice
-nnoremap <silent> <esc><esc> :nohlsearch<CR>
 
 
 " Moving up and down work as you would expect
