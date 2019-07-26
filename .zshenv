@@ -1,6 +1,6 @@
 typeset -U path PATH
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:${PATH}"
 
 
 # autoload
@@ -61,7 +61,7 @@ export HISTSIZE=100000
 export SAVEHIST=${HISTSIZE}
 
 # Do not add in root
-if [[ $UID == 0 ]]; then
+if [[ ${UID} == 0 ]]; then
   unset HISTFILE
   export SAVEHIST=0
 fi

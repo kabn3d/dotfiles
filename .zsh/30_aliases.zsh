@@ -24,7 +24,7 @@ alias hsg='history -E 1| grep'
 alias v='vim'
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
-if ! command -v vim > /dev/null 2>&1; then
+if ! (command -v vim) > /dev/null 2>&1; then
   alias vim=vi
 fi
 
