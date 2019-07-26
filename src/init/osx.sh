@@ -28,11 +28,17 @@ chflags nohidden ~/Library
 # Dock
 defaults write com.apple.dock no-bouncing -bool true
 defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock tilesize -int 25
 
 
 # Keyboard
 defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 15
+
+
+# Mouse
+defaults write -g com.apple.mouse.scaling 1.5
 
 
 # Trackpad
