@@ -29,6 +29,8 @@ if ! (command -v vim) > /dev/null 2>&1; then
 fi
 
 # etc
+alias q="exit"
+
 alias g="git"
 alias tx="tmux"
 

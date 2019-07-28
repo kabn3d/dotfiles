@@ -67,8 +67,8 @@ inoremap ' ''<Left>
 inoremap [ []<Left>
 
 " Don't use registor when pressed 'x' and 's'
-nnoremap x "_x
-nnoremap s "_s
+" nnoremap x "_x
+" nnoremap s "_s
 
 nnoremap Y y$
 

@@ -93,7 +93,8 @@ endif
 
 set statusline+=%=
 set statusline+=
-set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}\|%Y
+" set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}\|%Y
+set statusline+=\ %{&fenc!=''?&fenc:&enc}\|%{&ff}
 set statusline+=\ Ln:%l/%L
 set statusline+=,
 set statusline+=Col:%c
