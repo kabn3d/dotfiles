@@ -20,11 +20,10 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias l="ls -lAhF"    # Show hidden all files
-alias la="ls -AF"     # Show hidden files
-alias ll="ls -lFh"    # Show all files in long format
-alias lr="ls -lR"     # Recursive ls
-alias lld="ls -l | grep ^d"        # Show only directories
+# ls
+alias l="ls -lAhF"
+alias ll="ls -lFh"
+alias lld="ls -l | grep ^d"
 
 # Helpers
 alias grep='grep --color=auto'
@@ -40,7 +39,7 @@ alias nvim='vim -N -u NONE -i NON' # Use plain vim
 
 # etc
 alias g="git"
-alias t="tmux"
+alias tx="tmux"
 
 alias sudo='sudo ' # Enable aliases to be 'sudo' ed
 
