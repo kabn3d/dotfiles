@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # After the install, setup fzf
 printf "==> \nRunning fzf install script...\n"
 /usr/local/opt/fzf/install --all --no-bash --no-fish
