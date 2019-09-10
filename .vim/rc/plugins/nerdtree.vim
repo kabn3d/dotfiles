@@ -3,6 +3,6 @@ let g:NERDTreeQuitOnOpen=0
 " show hidden files in NERDTree
 let NERDTreeShowHidden=1
 " Toggle NERDTree
-nnoremap <silent> <Leader>k :NERDTreeToggle<CR>
+nnoremap <silent> <localLeader>k :NERDTreeToggle<CR>
 " expand to the path of the file in the current buffer
 nnoremap <silent> <Leader>y :NERDTreeFind<CR>
