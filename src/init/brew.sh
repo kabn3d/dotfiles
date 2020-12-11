@@ -28,8 +28,6 @@ formulae=(
 )
 
 casks=(
-  virtualbox
-  vagrant
 )
 
 printf "\n==> Installing homebrew packages...\n"
