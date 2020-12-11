@@ -21,9 +21,5 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# vim
 alias vi='vim'
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
-
-# etc
-alias sudo='sudo ' # Enable aliases to be 'sudo' ed
