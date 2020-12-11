@@ -17,18 +17,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Utilitiess
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plugin 'tpope/vim-fugitive' " the ultimate git helper
-Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc / gc
 Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim' " editor config
 Plugin 'yggdroot/indentline' "indent line
 " Plugin 'itchyny/lightline.vim'
-
-" Python
-Plugin 'davidhalter/jedi-vim'
-Plugin 'kevinw/pyflakes-vim'
-Plugin 'jmcantrell/vim-virtualenv'
 
 " Colorschemes
 Plugin 'altercation/vim-colors-solarized'
