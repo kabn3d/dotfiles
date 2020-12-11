@@ -9,8 +9,5 @@ command! -bang -bar -complete=file -nargs=? Jis       Iso2022jp<bang> <args>
 command! -bang -bar -complete=file -nargs=? Sjis      Cp932<bang> <args>
 command! -bang -bar -complete=file -nargs=? Unicode   Utf16<bang> <args>
 
-
-command! Date :call setline('.', getline('.') . strftime('%Y/%m/%d'))
-
 " fix
 command! -nargs=? Random echo Random(<q-args>)
