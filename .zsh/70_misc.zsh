@@ -8,28 +8,5 @@ zshaddhistory() {
     && ${cmd} != ..*
     && ${cmd} != (l|l[sl])
     && ${cmd} != cd
-    && ${cmd} != man
-    && ${cmd} != cat
-    && ${cmd} != pwd
-    && ${cmd} != echo
-    && ${cmd} != touch
-    # && ${cmd} != (v|vr|vim)
-    && ${cmd} != (tm|tmux)
-    && ${cmd} != less
-    && ${cmd} != head
-    && ${cmd} != ping
-    && ${cmd} != open
-    && ${cmd} != file
-    && ${cmd} != uname
-    && ${cmd} != which
-    && ${cmd} != type
-    && ${cmd} != file
-    && ${cmd} != whois
-    && ${cmd} != uname
-    && ${cmd} != command
-    && ${cmd} != pacman
-    && ${cmd} != brew
-    && ${cmd} != code
-    && ${cmd} != ggl
   ]]
 }
