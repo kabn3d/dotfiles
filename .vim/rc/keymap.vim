@@ -35,8 +35,6 @@ nnoremap <F11> :<C-u>setlocal cursorline!<CR>
 
 
 " Shortcut keys
-inoremap <silent> <C-j> <esc>
-noremap! <C-j> <esc>
 
 nnoremap <C-h> :<C-u>help<Space>
 
