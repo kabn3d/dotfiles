@@ -1,6 +1,6 @@
 # Helpers
 alias ls="ls ${colorflag}"  # Always use color output for 'ls'
-alias ll="ls -lFh"          # Show all files in long format
+alias ll="ls -l"
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
