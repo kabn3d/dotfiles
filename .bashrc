@@ -16,7 +16,7 @@ shopt -s histappend;
 shopt -s cdspell;
 
 # alias
-alias ll="ls -lFh"
+alias ll="ls -l"
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
