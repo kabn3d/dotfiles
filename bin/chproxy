@@ -1,4 +1,0 @@
-#!/bin/bash
-
-export http_proxy="http://proxy name:port number"
-export https_proxy="http://proxy name:port number"
