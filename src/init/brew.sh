@@ -18,13 +18,7 @@ formulae=(
   git
   vim
   tmux
-  reattach-to-user-namespace # for copy in tmux
-  fzf
-  tree
-  nim
   python3
-  clisp
-  # zplug
 )
 
 casks=(
