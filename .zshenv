@@ -44,8 +44,9 @@ setopt no_global_rcs
 export PATH=~/bin:"$PATH"
 
 # Settings for golang
-export GOPATH="$HOME"
-export GOBIN="$GOPATH/bin"
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/go"
+export GOBIN="$GOROOT/bin"
 export PATH="$GOBIN:$PATH"
 
 # declare the environment variables
