@@ -1,21 +1,21 @@
 #!/bin/bash
 
 if [ "$(uname)" != "Darwin" ]; then
-	echo "ERROR:!" >&2
+	echo "ERROR: This OS is not osx" >&2
 	exit 1
 fi
 
 printf "Setting osx...\n"
 # Finder.app
-defaults write com.apple.finder AppleShowAllFiles YES
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.Finder AppleShowAllFiles YES
+defaults write com.apple.Finder _FXShowPosixPathInTitle -bool true
 defaults write com.apple.Finder QuitMenuItem -bool true
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
-defaults write com.apple.finder PathBarRootAtHome -bool yes
-defaults write com.apple.finder DisableAllAnimations -bool true
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}" #fix
-defaults write com.apple.finder FinderSounds -bool no
+defaults write com.apple.Finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.Finder WarnOnEmptyTrash -bool false
+defaults write com.apple.Finder PathBarRootAtHome -bool yes
+defaults write com.apple.Finder DisableAllAnimations -bool true
+defaults write com.apple.Finder NewWindowTargetPath -string "file://${HOME}" #fix
+defaults write com.apple.Finder FinderSounds -bool no
 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.CrashReporter DialogType none
@@ -58,7 +58,7 @@ sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerStat
 
 # Terminal.app
 defaults write com.apple.Terminal ShowLineMarks -int 0
-defaults write com.apple.terminal StringEncodings -array 4
+defaults write com.apple.Terminal StringEncodings -array 4
 
 printf "Install color scheme.\n"
 git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git ~/Downloads/scheme
@@ -67,13 +67,15 @@ git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git ~/Do
 printf "Change default profiles.\n"
 TERM_PROFILE="Solarized Dark"
 TERM_PATH=~/Downloads/scheme
-CURRENT_PROFILE="$(defaults read com.apple.terminal 'Default Window Settings' \
+CURRENT_PROFILE="$(defaults read com.apple.Terminal 'Default Window Settings' \
 	| awk -F\\ '{print $1}')"
+
 if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
-	open "${TERM_PATH}"/"${TERM_PROFILE}".terminal
+	open "${TERM_PATH}"/"${TERM_PROFILE}".Terminal
 	defaults write com.apple.Terminal "Default Window Settings" -string "${TERM_PROFILE}"
 	defaults write com.apple.Terminal "Startup Window Settings" -string "${TERM_PROFILE}"
 fi
+
 rm -rf ~/Downloads/scheme/
 
 # fix
