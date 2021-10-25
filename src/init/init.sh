@@ -16,4 +16,4 @@ if [[ "${SHELL}" != "${zsh_path}" ]]; then
   printf "default shell changed to ${zsh_path}"
 fi
 
-printf "\nComplete!\n"
+printf "Complete!\n"
