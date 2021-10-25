@@ -3,7 +3,7 @@ let g:mapleader = ","
 let g:maplocalleader = "\<Space>""
 
 " Local leader mapping
-nnoremap <LocalLeader>w :w<CR>
+" nnoremap <LocalLeader>w :w<CR>
 nnoremap <LocalLeader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
 nnoremap <LocalLeader>i gg=<S-g><C-o><C-o>zz
 
@@ -49,13 +49,13 @@ noremap \s :set ts=4 sts=4 sw=4 et<cr>
 
 
 " Bracket Completion
-inoremap { {}<Left>
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<ESC>i
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
-inoremap " ""<Left>
-inoremap ' ''<Left>
-inoremap [ []<Left>
+" inoremap { {}<Left>
+" inoremap {<Enter> {}<Left><CR><ESC><S-o>
+" inoremap ( ()<ESC>i
+" inoremap (<Enter> ()<Left><CR><ESC><S-o>
+" inoremap " ""<Left>
+" inoremap ' ''<Left>
+" inoremap [ []<Left>
 
 " Don't use registor when pressed 'x' and 's'
 " nnoremap x "_x
