@@ -7,7 +7,7 @@ printf "==> \nRunning fzf install script...\n"
 # Change the default shell to zsh
 zsh_path="$( command -v zsh )"
 if ! grep "${zsh_path}" /etc/shells; then
-  printf "adding ${zsh_path} to /etc/shells"
+  printf "Adding ${zsh_path} to /etc/shells"
   printf "${zsh_path}" | sudo tee -a /etc/shells
 fi
 
