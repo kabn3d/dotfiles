@@ -19,6 +19,7 @@ formulae=(
   vim
   tmux
   python3
+  jq
 )
 
 casks=(
