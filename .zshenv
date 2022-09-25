@@ -1,6 +1,6 @@
 typeset -U path PATH
 
-export PATH="/usr/local/bin:${PATH}"
+export PATH="/usr/local/bin:/usr/sbin:/sbin:${PATH}"
 
 
 # autoload
