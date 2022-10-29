@@ -1,11 +1,12 @@
 #!/bin/bash
 
 if [ "$(uname)" != "Darwin" ]; then
-	echo "ERROR: This OS is not osx" >&2
-	exit 1
+  echo "ERROR: This OS is not osx" >&2
+  exit 1
 fi
 
 printf "Setting osx...\n"
+
 # Finder.app
 defaults write com.apple.Finder AppleShowAllFiles YES
 defaults write com.apple.Finder _FXShowPosixPathInTitle -bool true
@@ -60,20 +61,23 @@ sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerStat
 defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.apple.Terminal StringEncodings -array 4
 
-printf "Install color scheme.\n"
+# VSCode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+printf "==> Install color scheme.\n"
 git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git ~/Downloads/scheme
 
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
-printf "Change default profiles.\n"
+printf "\n==> Change default profiles.\n"
 TERM_PROFILE="Solarized Dark"
 TERM_PATH=~/Downloads/scheme
 CURRENT_PROFILE="$(defaults read com.apple.Terminal 'Default Window Settings' \
-	| awk -F\\ '{print $1}')"
+  | awk -F\\ '{print $1}')"
 
 if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
-	open "${TERM_PATH}"/"${TERM_PROFILE}".Terminal
-	defaults write com.apple.Terminal "Default Window Settings" -string "${TERM_PROFILE}"
-	defaults write com.apple.Terminal "Startup Window Settings" -string "${TERM_PROFILE}"
+  open "${TERM_PATH}"/"${TERM_PROFILE}".Terminal
+  defaults write com.apple.Terminal "Default Window Settings" -string "${TERM_PROFILE}"
+  defaults write com.apple.Terminal "Startup Window Settings" -string "${TERM_PROFILE}"
 fi
 
 rm -rf ~/Downloads/scheme/

@@ -16,10 +16,11 @@ fi
 
 formulae=(
   git
-  vim
-  tmux
   python3
   jq
+  fzf
+  # vim
+  # tmux
 )
 
 casks=(

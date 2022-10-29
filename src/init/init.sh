@@ -13,7 +13,7 @@ fi
 
 if [[ "${SHELL}" != "${zsh_path}" ]]; then
   chsh -s "${zsh_path}"
-  printf "default shell changed to ${zsh_path}"
+  printf "default shell changed to %s" "${zsh_path}"
 fi
 
 printf "Complete!\n"

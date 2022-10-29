@@ -20,10 +20,10 @@ Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc / gc
 Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim' " editor config
-Plugin 'yggdroot/indentline' "indent line
+" Plugin 'yggdroot/indentline' "indent line
 
 " Colorschemes
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 
 if has_vundle == 0
   echo "==> Installing Vundles, please ignore key map error messages"
@@ -35,5 +35,5 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-colorscheme solarized
+" colorscheme solarized
 " Setting up Vundle - the vim plugin bundler end
