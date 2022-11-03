@@ -3,7 +3,6 @@ let g:mapleader = ","
 let g:maplocalleader = "\<Space>""
 
 " Local leader mapping
-" nnoremap <LocalLeader>w :w<CR>
 nnoremap <LocalLeader>r :<C-u>source $MYVIMRC<CR>:nohlsearch<CR>
 nnoremap <LocalLeader>i gg=<S-g><C-o><C-o>zz
 
@@ -26,16 +25,12 @@ nnoremap <F10> :<C-u>setlocal number!<CR>
 " F11: Toggle cursorline
 nnoremap <F11> :<C-u>setlocal cursorline!<CR>
 
-
 " Shortcut keys
-
 nnoremap <C-h> :<C-u>help<Space>
-
 nnoremap <silent> <esc><esc> :nohlsearch<CR>
 
 " Highlight the word under the cursor
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
-
 
 " Moving up and down work as you would expect
 nnoremap <silent> j gj
@@ -47,7 +42,6 @@ nnoremap <silent> $ g$
 noremap \t :set ts=4 sts=4 sw=4 noet<cr>
 noremap \s :set ts=4 sts=4 sw=4 et<cr>
 
-
 " Bracket Completion
 " inoremap { {}<Left>
 " inoremap {<Enter> {}<Left><CR><ESC><S-o>
@@ -58,18 +52,16 @@ noremap \s :set ts=4 sts=4 sw=4 et<cr>
 " inoremap [ []<Left>
 
 " Don't use registor when pressed 'x' and 's'
-" nnoremap x "_x
-" nnoremap s "_s
-
+nnoremap x "_x
+nnoremap s "_s
 nnoremap Y y$
 
 nnoremap n nzz
 nnoremap N Nzz
-nnoremap * *zz
+noremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
-
 
 " like emacs keybinds
 cnoremap <C-k> <UP>
@@ -98,7 +90,6 @@ inoremap <C-f> <Right>
 inoremap <C-b> <Left>
 inoremap <C-m> <CR>
 nnoremap <C-m> o<Esc>
-
 
 " Disable key binding
 nnoremap q: <Nop>
