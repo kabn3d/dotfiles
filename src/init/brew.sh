@@ -19,7 +19,6 @@ formulae=(
   python3
   jq
   fzf
-  go
   # vim
   # tmux
 )

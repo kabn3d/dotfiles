@@ -24,3 +24,4 @@ alias fgrep='fgrep --color=auto'
 
 alias vi='vim'
 alias nvim='vim -N -u NONE -i NON' # Use plain vim
+. "$HOME/.cargo/env"

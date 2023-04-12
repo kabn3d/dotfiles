@@ -40,10 +40,7 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
 # Settings for golang
-export GOROOT="/usr/local/go"
-export GOPATH="$HOME/go"
-export GOBIN="$GOROOT/bin"
-export PATH="$GOBIN:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
 
 # declare the environment variables
 export CORRECT_IGNORE='_*'
@@ -73,3 +70,4 @@ export LISTMAX=50
 export INTERACTIVE_FILTER="fzf:peco:percol:gof:pick"
 
 export DOTPATH=${0:A:h}
+. "$HOME/.cargo/env"
