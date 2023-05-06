@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ "$(uname)" != "Darwin" ]; then
-  echo "ERROR: This OS is not osx" >&2
-  exit 1
+    echo "ERROR: This OS is not osx" >&2
+    exit 1
 fi
 
 printf "Setting osx...\n"
@@ -72,12 +72,12 @@ printf "\n==> Change default profiles.\n"
 TERM_PROFILE="Solarized Dark"
 TERM_PATH=~/Downloads/scheme
 CURRENT_PROFILE="$(defaults read com.apple.Terminal 'Default Window Settings' \
-  | awk -F\\ '{print $1}')"
+    | awk -F\\ '{print $1}')"
 
 if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
-  open "${TERM_PATH}"/"${TERM_PROFILE}".Terminal
-  defaults write com.apple.Terminal "Default Window Settings" -string "${TERM_PROFILE}"
-  defaults write com.apple.Terminal "Startup Window Settings" -string "${TERM_PROFILE}"
+    open "${TERM_PATH}"/"${TERM_PROFILE}".Terminal
+    defaults write com.apple.Terminal "Default Window Settings" -string "${TERM_PROFILE}"
+    defaults write com.apple.Terminal "Startup Window Settings" -string "${TERM_PROFILE}"
 fi
 
 rm -rf ~/Downloads/scheme/
