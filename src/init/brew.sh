@@ -15,7 +15,7 @@ if test ! "$( brew doctor )"; then
 fi
 
 formulae=(
-    git
+    # git
     fzf
     # vim
     # tmux
@@ -45,3 +45,4 @@ for cask in "${casks[@]}"; do
 done
 
 printf "\nComplete!\n"
+
