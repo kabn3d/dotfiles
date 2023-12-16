@@ -1,6 +1,5 @@
-#!/bin/bash
-
-# error handling
+#!/usr/bin/env bash
+set -e
 
 # Install command-line tools using Homebrew.
 if ! command -v brew > /dev/null; then
@@ -8,20 +7,18 @@ if ! command -v brew > /dev/null; then
     /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
 
-# error: brew doctor
-if test ! "$( brew doctor )"; then
-    echo "ERROR:" >&2
+if ! brew doctor > /dev/null; then
+    echo "ERROR: brew doctor" >&2
     exit 1
 fi
 
 formulae=(
-    # git
     fzf
-    # vim
-    # tmux
+    tmux
 )
 
 casks=(
+    multipass
 )
 
 printf "\n==> Installing homebrew packages...\n"

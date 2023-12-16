@@ -22,10 +22,10 @@ test: ## Test dotfiles and init scripts
 	@echo "test is inactive temporarily"
 
 update: ## Fetch changes for this repo
-	git pull origin master
+	git pull origin main
 	git submodule init
 	git submodule update
-	git submodule foreach git pull origin master
+	git submodule foreach git pull origin main
 
 install: update deploy init ## Run make update, deploy, init
 	@exec $$SHELL

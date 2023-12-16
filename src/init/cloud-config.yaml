@@ -1,0 +1,17 @@
+#cloud-config
+
+timezone: Asia/Tokyo
+locale: en_US.UTF-8
+
+package_update: true
+package_upgrade: true
+
+packages:
+  - awscli
+  - jq
+  - gnupg
+  - zip
+
+runcmd:
+  - sudo apt-get autoremove
+  - sudo apt-get clean
