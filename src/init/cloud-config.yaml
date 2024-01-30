@@ -11,6 +11,7 @@ packages:
   - jq
   - gnupg
   - zip
+  - traceroute
   - whois
 
 runcmd:

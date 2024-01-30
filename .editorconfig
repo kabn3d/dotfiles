@@ -23,7 +23,6 @@ trim_trailing_whitespace = false
 [*.vim]
 trim_trailing_whitespace = false
 
-[*.{yml,yaml}]
+[*.{yml,yaml,json}]
 indent_style = space
 indent_size = 2
-
