@@ -18,3 +18,4 @@ runcmd:
   - sudo apt-get autoremove
   - sudo apt-get clean
 
+# .editorconfig
